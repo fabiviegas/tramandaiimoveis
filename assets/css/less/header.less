@@ -1,0 +1,71 @@
+// out: false 
+
+@import "pallete.less";
+
+.page__header {
+
+    .header__contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding: 12px 28px 12px 28px;
+    
+        background-color: @sunOrange;
+
+        .icons__header {
+            width: 24px;
+        }
+
+        .icons__header2 {
+        width: 20px;
+        }
+
+        .icons__header:first-child, .icons__header2:first-child {
+        padding-right: 24px;
+        }
+
+        .icons__header, .icons__header2 {
+        filter: @whiteIcons;
+        }
+    }
+    
+    .menu {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0px 12px 28px;
+
+        background-color: @marineBlue;
+
+        .menu__logo {
+
+            .logo__header {
+                width: 134px;
+                padding-top: 5px;
+            }
+        }
+    
+        .menu__bar {
+            width: 104px;
+            height: 54px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            background-color: @skyBlue;
+            filter: @shadow;
+
+            .burger__bar {
+                width: 36px;
+                height: 27px;
+                padding: 12px 0 12px 16px;
+
+                filter: @whiteIcons;
+            }
+        }
+    }
+                  
+}

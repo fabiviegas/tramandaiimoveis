@@ -1,0 +1,131 @@
+// out: false
+
+@import "fonts.less";
+@import "pallete.less";
+
+.page__footer {
+
+    background-color: @marineBlue;
+    background-image: url('../images/umbrella-mobile.png');
+    background-repeat: no-repeat;
+    background-position: -75px;
+    color: @softWhite;
+     
+    .contacts__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid;
+        border-color: @softWhite;
+        margin: 0 58px 0 58px;
+                
+        .logo__creci {
+            display: flex;
+            flex-direction: column;
+            margin-top: 55px;
+
+            .logo__footer {
+                width: 233px;
+            }
+
+            .creci {
+                text-align: center;
+                .mSerratRegular();
+                font-size: 12px;
+            }
+        }
+ 
+        .contacts__links {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            
+            .icons__footer {
+                width: 15px;
+                filter: @whiteFooter;
+                padding-right: 12px;
+            }
+
+            .whats__footer, .email__footer, .address {
+            display: flex;
+            flex-direction: row;
+            .mSerratRegular();
+            font-size: 12px;
+            padding-top: 17px;
+            line-height: 15px;
+            }
+        }
+    }
+
+    .products__footer {
+        display: none;
+    }
+ 
+    .nav__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 55px;
+
+        .nav__title {
+            .mSerratSBold();
+            font-size: 16px;
+            padding: 0 0 15px 0;
+        }
+        .nav__links {
+            color: @softWhite;
+            .mSerratRegular();
+            font-size: 16px;
+            padding: 15px 0 15px 0;
+        }
+    }
+
+    .social__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+
+        .social__title {
+            .mSerratSBold();
+            font-size: 16px;
+            padding: 0 0 30px 0;    
+        }
+
+        .social__links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+            .icons__footer2 {
+                width: 50px;
+                filter: @orangeIconsS;
+                
+                &:first-child {
+                    padding-right: 25px;
+                }
+            }
+            
+        }
+
+        .back__top {
+            border: none;
+            background-color: @marineBlue;
+            color: @sunOrange;
+            padding: 55px 0 55px 0;
+
+            .button__text {
+                display: none;
+            }
+
+            .icons__arrow {
+                width: 50px;
+                filter: @orangeIconsS;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+//out: false
+
+/*CORES E FONTES
+
+sun-orange: #F6A41D
+marine-blue: #19057D
+sky-blue: #55A8E1
+soft-white: #F0F0EF
+night-blue: #090A23
+
+botão do whats - gradient-linear rgb 7 157 68, rgb 52 242 83
+
+*/
+
+@sunOrange: #F6A41D;
+@marineBlue: #19057D;
+@skyBlue: #55A8E1;
+@softWhite: #F0F0EF;
+@nightBlue: #090A23;
+@shadow: drop-shadow(0 4px 2px rgb(0 0 0 / 25%));
+
+/*O filtro abaixo corresponde a cor soft-white, uma forma mais rápida para alterar a cor do arquivo svg, utilizando um conversor do site https://www.cesarlopes.com/site/como-alterar-a-cor-de-um-svg-com-css/, também foi adicionada a sombra neste filtro*/
+@whiteIcons: invert(99%) sepia(37%) saturate(13%) hue-rotate(1deg) brightness(98%) contrast(91%) drop-shadow(0 4px 2px rgb(0 0 0 / 25%));
+
+@whiteFooter: invert(99%) sepia(37%) saturate(13%) hue-rotate(1deg) brightness(98%) contrast(91%);
+
+/*Filtro para a cor sunOrange, com e sem sombra:*/
+
+@orangeIcons: invert(76%) sepia(8%) saturate(7479%) hue-rotate(346deg) brightness(100%) contrast(94%);
+
+@orangeIconsS: invert(76%) sepia(8%) saturate(7479%) hue-rotate(346deg) brightness(100%) contrast(94%) drop-shadow(0 4px 4px rgb(0 0 0 / 25%));;
+
+
+body {
+    background-color: #F0F0EF;
+}
+
+
+
