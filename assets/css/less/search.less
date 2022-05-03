@@ -4,16 +4,120 @@
 @import "fonts.less";
 
 .search {
-    background-image: url('../images/bg_busca.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: @marineBlue;
+    border-radius: 0px 0px 50px 0px / 0px 0px 50px 0px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    
+    .search__box {
+        padding: 40px 30px 50px 30px;
 
-    .sale__box {
-       
-    }
+        .bt__sale {
+            background-color: @softWhite;
+            border-style: none;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 106px;
+            height: 38px;
 
-    .code__box {
+            color: @marineBlue;
+            .ralewayBold();
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .bt__code {
+            background-image: linear-gradient(rgb(229, 147, 54, 100%), rgb(248, 215, 46, 100%));
+            border-style: none;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 106px;
+            height: 38px;
+
+            color: @softWhite;
+            .ralewayBold();
+            font-size: 20px;
+            text-shadow: 0 4px 4px rgb(0 0 0 / 45%);
+        }
         
+        .collapse {
+            
+            background-color: @softWhite;
+            padding: 10px 20px 20px 20px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            .submit {
+                
+                border-style: none;
+                background-color: @sunOrange;
+                margin-top: 30px;
+                margin-inline-start: 30%;
+                border-radius: 10px;
+                box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+            }
+
+            i {
+                color: @softWhite;
+                font-size: 24px;
+                padding: 10px 30px 10px 30px;
+            }
+        }
+        .search__bysale,
+        .search__bycode {
+            input,
+            select {
+                display: block;
+                width: 100%;
+            }
+            
+            .sale__title {
+                .ralewayBold();
+                font-size: 16px;
+                padding: 19px 0 19px 0;
+                color: @nightBlue;
         
+            }
+
+            .custom__select {
+                
+                select {
+                .ralewayRegular();
+                font-size: 14px;
+                color: @nightBlue;
+                line-height: 16px;
+
+                background-color: @softWhite;
+                padding: 12px 15px 12px 15px;
+                border-radius: 5px;
+                border-color: @nightBlue;
+                -webkit-appearance: none;
+
+                background-image: url('../images/icons/polygon.svg'), linear-gradient(#d2dbe2, #d2dbe2);
+	            background-repeat: no-repeat;
+	            background-position: right .7em top 50%, right 0 top 0;
+	            background-size: 12px, 34px;
+                }
+                        
+            }
+            input {
+                background-color: @softWhite;
+                margin-top: 20px;
+                padding: 12px 15px 12px 15px;
+                border-radius: 5px;
+                border-color: @nightBlue;
+                -webkit-appearance: none;
+
+                .ralewayRegular();
+                font-size: 14px;
+            }
+            
+            
+        
+        }
+
+
+
+    
     }
 }
