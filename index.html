@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Tramandaí Imóveis</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
     <link href="assets/css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a4d818eef5.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -45,6 +48,45 @@
     </section>
 
     <section class="search">
+        <div class="search__box">
+            <div class="sail__box">
+                <button class="by__sail"><h1 class="sale__button" id="sail__form">Venda</h1></button>
+                <form class="search__bysale" id="sail">
+                    <label id="categoria"><h2 class="sail__title">Categoria</h2></label>
+                    <select type="search" id="categoria">
+                        <option>Apartamento</option>
+                        <option>Casa</option>
+                        <option>Terreno</option>
+                    </select>
+                               
+                    <label id="cidade"><h2 class="sale__title">Cidade</h2></label>
+                    <select type="search" id="cidade">
+                        <option>Tramandaí - RS</option>
+                        <option>Imbé - RS</option>
+                        <option>Cidreira - RS</option>
+                    </select>
+                
+                    <label id="bairro"><h2 class="sale__title">Bairro</h2></label>
+                    <select type="search" id="bairro">
+                        <option>Centro</option>
+                        <option>Bairro Aqui</option>
+                        <option>Olá Bairro</option>
+                    </select>
+                </form>
+                <button class="submit" id="sale">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="code__box">
+                <button class="by__code"><h1 class="code__button" id="code__form">Código</h1></button>
+                <form class="search__bycode" id="code">
+                    <input type="search" id="code" placeholder="Digite o código do imóvel">
+                </form>
+                <button class="submit" id="code">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
 
     </section>
 
@@ -120,5 +162,9 @@
             </button>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
 </body>
 </html>

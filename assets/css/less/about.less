@@ -8,6 +8,7 @@
     background-image: url('../images/bg_praia-mobile.png');
     background-repeat: no-repeat;
     background-position: 0px 55px;
+    background-size: cover;
     
     display: flex;
     flex-direction: column;
@@ -20,7 +21,7 @@
     }
 
     .about__content {
-        padding: 0 40px 55px 40px;
+        padding: 0 40px 0px 40px;
     
         .about__title {
             font-family: @lobster;
@@ -37,6 +38,10 @@
             color: @softWhite;
             line-height: 19px;
             padding-bottom: 15px;
+
+            &:last-child {
+                padding-bottom: 40px;
+            }
             
         }
     }

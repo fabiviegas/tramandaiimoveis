@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <title>Tramandaí Imóveis</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a4d818eef5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+          Venda
+        </button>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+            Código
+        </button>
+      </p>
+      <div class="collapse show" id="collapseExample">
+        <div class="sail__box">
+            <form class="search__bysale" id="sail">
+                <label id="categoria"><h2 class="sail__title">Categoria</h2></label>
+                <select type="search" id="categoria">
+                    <option>Apartamento</option>
+                    <option>Casa</option>
+                    <option>Terreno</option>
+                </select>
+                           
+                <label id="cidade"><h2 class="sale__title">Cidade</h2></label>
+                <select type="search" id="cidade">
+                    <option>Tramandaí - RS</option>
+                    <option>Imbé - RS</option>
+                    <option>Cidreira - RS</option>
+                </select>
+            
+                <label id="bairro"><h2 class="sale__title">Bairro</h2></label>
+                <select type="search" id="bairro">
+                    <option>Centro</option>
+                    <option>Bairro Aqui</option>
+                    <option>Olá Bairro</option>
+                </select>
+            </form>
+            <button class="submit" id="sale">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+      </div>
+      <div class="collapse" id="collapseExample2">
+        <div class="code__box">
+            <form class="search__bycode" id="code">
+                <input type="search" id="code" placeholder="Digite o código do imóvel">
+            </form>
+            <button class="submit" id="code">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+      </div> 
+
+     
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+
+        $('#termsHome').change(function () {
+            if (this.checked) {
+                $(this).prop("checked", true);
+            } else {
+                $(this).prop("checked", false);
+            }
+            $(this).val(this.checked);
+        });
+
+        $(document).ready(function () {
+
+
+
+            $('.collapse').on('show.bs.collapse', function () {
+                $('.collapse.show').each(function () {
+                    $(this).collapse('hide');
+                });
+            });
+
+            $("#collapseExample").on("click", function () {
+
+                $(this).removeClass("btn--light");
+                $(this).addClass("btn--crimson");
+                $("#foco").removeClass("btn--crimson");
+                $("#foco").addClass("btn--light");
+
+            });
+
+            $("#collapseExample2").on("click", function () {
+
+                $(this).removeClass("btn--light");
+                $(this).addClass("btn--crimson");
+                $("#recente").removeClass("btn--crimson");
+                $("#recente").addClass("btn--light");
+
+            });
+
+            $(".exibir").on("click", function () {
+
+                $(this).hide();
+                $(".liexibir").hide();
+                $(".page__categories").attr("style", "overflow-y:scroll");
+                $(".part2").show();
+
+            });
+
+            $(".esconder").on("click", function () {
+
+                $(".part2").hide();
+                $(".page__categories").removeAttr("style");
+                $(".exibir").show();
+                $(".liexibir").show();
+
+            });
+
+
+
+            //$('#termsHome').click(function () {
+            //    alert("entrou");
+
+            //    if ($('#termsHome').is(':checked')) {
+            //        $(this).prop("checked", true);
+            //    } else {
+            //        $(this).prop("checked", false);
+            //    }
+
+            //    alert(this.checked);
+            //});
+
+        });
+    </script>
+</body>
+</html>

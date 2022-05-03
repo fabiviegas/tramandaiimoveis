@@ -216,48 +216,61 @@ body {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v26/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v26/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lobster';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lobster/v27/neILzCirqoswsqX9_oU.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lobster/v28/neILzCirqoswsqX9_oU.ttf) format('truetype');
 }
 /*Variáveis*/
+.search {
+  background-image: url('../images/bg_busca.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.search .sail__box {
+  position: relative;
+  top: 50px;
+}
+.search .code__box {
+  position: relative;
+}
 .about {
   background-image: url('../images/bg_praia-mobile.png');
   background-repeat: no-repeat;
   background-position: 0px 55px;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -268,7 +281,7 @@ body {
   padding-bottom: 30px;
 }
 .about .about__content {
-  padding: 0 40px 55px 40px;
+  padding: 0 40px 0px 40px;
 }
 .about .about__content .about__title {
   font-family: "Lobster", cursive;
@@ -285,6 +298,9 @@ body {
   color: #F0F0EF;
   line-height: 19px;
   padding-bottom: 15px;
+}
+.about .about__content .about__text:last-child {
+  padding-bottom: 40px;
 }
 .page__footer {
   background-color: #19057D;
@@ -389,13 +405,17 @@ body {
 .page__footer .social__footer .back__top {
   border: none;
   background-color: #19057D;
-  color: #F6A41D;
+  color: #F0F0EF;
   padding: 55px 0 55px 0;
 }
 .page__footer .social__footer .back__top .button__text {
-  display: none;
+  display: block;
+  padding-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 .page__footer .social__footer .back__top .icons__arrow {
   width: 50px;
-  filter: invert(76%) sepia(8%) saturate(7479%) hue-rotate(346deg) brightness(100%) contrast(94%) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: invert(99%) sepia(37%) saturate(13%) hue-rotate(1deg) brightness(98%) contrast(91%) drop-shadow(0 4px 2px rgba(0, 0, 0, 0.25));
 }
