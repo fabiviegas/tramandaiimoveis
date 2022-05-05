@@ -16,22 +16,48 @@
 </head>
 <body>
     <header class="page__header">
-        <div class="header__contacts">
-            <div class="contacts">
-                <img class="icons__header" src="assets/images/icons/whatsapp-brands.svg" alt="Ícone Whatsapp">
-                <img class="icons__header" src="assets/images/icons/envelope-solid.svg" alt="Ícone envelope de email">
+        <div class="header__container">
+            <div class="header__contacts">
+                <div class="contacts">
+                    <img class="icons__header" src="assets/images/icons/whatsapp-brands.svg" alt="Ícone Whatsapp">
+                    <img class="icons__header" src="assets/images/icons/envelope-solid.svg" alt="Ícone envelope de email">
+                </div>
+                <div class="social">
+                    <img class="icons__header2" src="assets/images/icons/instagram-square-brands.svg" alt="Ícone Instagram">
+                    <img class="icons__header2" src="assets/images/icons/facebook-brands.svg" alt="Ícone Facebook">
+                </div>
             </div>
-            <div class="social">
-                <img class="icons__header2" src="assets/images/icons/instagram-square-brands.svg" alt="Ícone Instagram">
-                <img class="icons__header2" src="assets/images/icons/facebook-brands.svg" alt="Ícone Facebook">
-            </div>
-        </div>
-        <div class="menu">
-            <div class="menu__logo">
-                <img class="logo__header" src="assets/images/logo.jpeg" alt="Logo Tramandaí Imóveis">
-            </div>
-            <div class="menu__bar">
-                <img class="burger__bar" src="assets/images/icons/bars-solid.png" alt="Menu de Navegação burger bar">
+            <div class="header__mobile">
+                <div class="menu__logo">
+                    <img class="logo__header" src="assets/images/logo.jpeg" alt="Logo Tramandaí Imóveis">
+                </div>
+            
+                <menu class="menu__mobile">
+                    <picture role="button" class="navbar__hamburguer">
+                        <i class="fa-solid fa-bars"></i>
+                    </picture>
+                    <div id="navbar__overlay" class="navbar__overlay">
+                        <div class="overlay__content">
+                            <div role="button" class="overlay__close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+            
+                            <nav class="overlay__links">
+                                <a href="index.html">Página Inicial</a>
+                                <a href="#">Sobre nós</a>
+                                <a href="#">Venda</a>
+                                <a href="#">Empreendimentos</a>
+                                <a href="#">Contato</a>
+                            </nav>
+                            <div class="overlay__buttons">
+                                <a href="#" class="button__client">
+                                    Atendimento 24h <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+            
+                        </div>
+                    </div>
+                </menu>
             </div>
         </div>
     </header>
@@ -48,10 +74,10 @@
     <section class="search">
         <div class="search__box">
             <p>
-                <button class="bt__sale" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                <button id="venda" class="bt__active" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
                 Venda
                 </button>
-                <button class="bt__code" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                <button id="codigo" class="bt__off" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
                     Código
                 </button>
             </p>
@@ -186,76 +212,49 @@
 
     <script type="text/javascript">
 
-        $('#termsHome').change(function () {
-            if (this.checked) {
-                $(this).prop("checked", true);
-            } else {
-                $(this).prop("checked", false);
-            }
-            $(this).val(this.checked);
-        });
-
         $(document).ready(function () {
-
-
-
+            
             $('.collapse').on('show.bs.collapse', function () {
                 $('.collapse.show').each(function () {
                     $(this).collapse('hide');
                 });
             });
 
-            $("#collapseExample").on("click", function () {
-
-                $(this).removeClass("btn--light");
-                $(this).addClass("btn--crimson");
-                $("#foco").removeClass("btn--crimson");
-                $("#foco").addClass("btn--light");
-
-            });
-
-            $("#collapseExample2").on("click", function () {
-
-                $(this).removeClass("btn--light");
-                $(this).addClass("btn--crimson");
-                $("#recente").removeClass("btn--crimson");
-                $("#recente").addClass("btn--light");
+            $("#venda").on("click", function () {
+                
+                $(this).removeClass("bt__off");
+                $(this).addClass("bt__active");
+                $("#codigo").removeClass("bt__active");
+                $("#codigo").addClass("bt__off");
+                
 
             });
 
-            $(".exibir").on("click", function () {
+            $("#codigo").on("click", function () {
 
-                $(this).hide();
-                $(".liexibir").hide();
-                $(".page__categories").attr("style", "overflow-y:scroll");
-                $(".part2").show();
-
-            });
-
-            $(".esconder").on("click", function () {
-
-                $(".part2").hide();
-                $(".page__categories").removeAttr("style");
-                $(".exibir").show();
-                $(".liexibir").show();
+                $(this).removeClass("bt__off");
+                $(this).addClass("bt__active");
+                $("#venda").removeClass("bt__active");
+                $("#venda").addClass("bt__off");
+                
 
             });
-
-
-
-            //$('#termsHome').click(function () {
-            //    alert("entrou");
-
-            //    if ($('#termsHome').is(':checked')) {
-            //        $(this).prop("checked", true);
-            //    } else {
-            //        $(this).prop("checked", false);
-            //    }
-
-            //    alert(this.checked);
-            //});
 
         });
+    </script>
+
+    <script>
+        const HAMBURGUER = document.querySelector('.navbar__hamburguer');
+        const MENU = document.querySelector('.navbar__overlay');
+        const CLOSE = document.querySelector('.overlay__close');
+
+        HAMBURGUER.addEventListener('click', () => {
+            MENU.classList.toggle('open');
+        })
+
+        CLOSE.addEventListener('click', () => {
+            MENU.classList.toggle('open');
+        })
     </script>
 </body>
 </html>

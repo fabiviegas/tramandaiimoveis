@@ -2,8 +2,6 @@
 
 @import "pallete.less";
 
-.page__header {
-
     .header__contacts {
         display: flex;
         flex-direction: row;
@@ -33,7 +31,7 @@
         }
     }
     
-    .menu {
+    .header__mobile {
 
         display: flex;
         flex-direction: row;
@@ -51,24 +49,111 @@
             }
         }
     
-        .menu__bar {
-            width: 104px;
-            height: 54px;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
+        .menu__mobile {
+        
 
-            background-color: @skyBlue;
-            filter: @shadow;
-
-            .burger__bar {
-                width: 36px;
-                height: 27px;
-                padding: 12px 0 12px 16px;
-                box-sizing: unset;
-
-                filter: @whiteIcons;
+            .navbar__hamburguer {
+                
+                font-size: 32px;
+                color: @softWhite;
+                text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+                padding: 12px 50px 12px 16px;
+                background-color: @skyBlue;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                box-shadow: 0 4px 2px rgb(0 0 0 / 25%);
+                
             }
-        }
+        
+        
+        .navbar__overlay {
+            z-index: 3000;
+            display: none;
+        
+            &.open {
+                display: flex;
+                flex-direction: column;
+
+        
+                height: 80%;
+                width: 100%;
+                position: fixed;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                
+                top: 0;
+                right: 0;
+                background-color: @sunOrange;
+                overflow: hidden !important;
+                transition: all linear 0.5s;
+        
+                .overlay__content {
+                    background-color: @sunOrange;
+                    overflow-y: auto !important;
+        
+                    
+                    .overlay__close {
+                        float: right;
+                        margin-top: 42px;
+                        margin-right: 30px;
+        
+                        i {
+                            font-size: 30px;
+                            color: @softWhite;
+                        }
+                    }
+        
+                        
+                    .overlay__links {
+                        padding-top: 48px;
+                        padding-bottom: 30px;
+                        padding-left: 40px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 20px;
+        
+                        a {
+                            .mSerratSBold();
+                            font-size: 18px;
+                            color: @softWhite;
+                            text-transform: uppercase;
+        
+                            
+                        }
+                    }
+        
+                    .overlay__buttons {
+                        padding-top: 50px;
+                        gap: 20px;
+                        display: flex;
+                        justify-content: center;
+        
+                        .button__client {
+                            
+                            height: fit-content;
+                            width: fit-content;
+                            border: 3px solid @softWhite;
+                            padding: 19px 40px;
+                            .mSerratSBold();
+                            font-size: 16px;
+                            letter-spacing: 1.5px;
+                            background-color: transparent;
+                            color: @softWhite;
+                            box-shadow: inset 0 0 1em @softWhite;
+                            border-radius: 10px;
+        
+                            i {
+                                padding-right: 10px;
+                            }
+            
+                            
+                        }
+                    }
+                }
+                
+            }
+            
+        }      
     }
-                  
 }
