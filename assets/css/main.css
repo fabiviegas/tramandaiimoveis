@@ -146,6 +146,50 @@ botão do whats - gradient-linear rgb 7 157 68, rgb 52 242 83
 body {
   background-color: #F0F0EF;
 }
+/*Google Fonts*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lobster/v28/neILzCirqoswsqX9_oU.ttf) format('truetype');
+}
+/*Variáveis*/
 .header__contacts {
   display: flex;
   flex-direction: row;
@@ -262,59 +306,49 @@ body {
 .header__mobile .menu__mobile .navbar__overlay.open .overlay__content .overlay__buttons .button__client i {
   padding-right: 10px;
 }
-.banner {
-  overflow: hidden;
+.banner__carousel img {
+  width: fit-content;
+  margin: 0 auto;
 }
-.banner .slide1 {
-  width: 100%;
+.banner__carousel .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 45%;
+  width: 98%;
 }
-.banner .slide2 {
-  display: none;
+.banner__carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  margin-left: 10px;
+  padding: 14px 16px 10px 15px !important;
+  color: #090A23;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
 }
-/*Google Fonts*/
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
+.banner__carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  margin-right: 10px;
+  padding: 14px 16px 10px 15px !important;
+  color: #090A23;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
 }
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+.banner__carousel .owl-nav .owl-prev,
+.banner__carousel .owl-nav .owl-next {
+  font-size: 13px;
+  border: 1px solid transparent;
 }
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
+.banner__carousel .owl-nav .owl-prev:hover,
+.banner__carousel .owl-nav .owl-next:hover {
+  color: #F6A41D;
+  box-shadow: rgba(0, 0, 0, 0.5);
 }
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lobster/v28/neILzCirqoswsqX9_oU.ttf) format('truetype');
-}
-/*Variáveis*/
 .search {
   background-color: #19057D;
   border-radius: 0px 0px 50px 0px / 0px 0px 50px 0px;

@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="assets/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libs/owl.theme.default.min.css">
+
     <link href="assets/css/main.css" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/a4d818eef5.js" crossorigin="anonymous"></script>
@@ -63,10 +66,10 @@
     </header>
 
     <section class="banner">
-        <div class="slides__list" >
-            <img class="slide1" src="assets/images/tramandai_slide1_mobile.jpg" alt="Slide 1 Família na Praia">
+        <div class="owl-carousel banner__carousel" >
+            <div class="item"><img src="assets/images/tramandai_slide1_mobile.jpg" alt="Slide 1 Família na Praia"></div>
             
-            <img class="slide2" src="assets/images/tramandai_slide2_mobile.jpg" alt="Slide 2 Família no Apartamento">
+            <div class="item"><img src="assets/images/tramandai_slide2_mobile.jpg" alt="Slide 2 Família no Apartamento"></div>
                         
         </div>
     </section>
@@ -255,6 +258,26 @@
         CLOSE.addEventListener('click', () => {
             MENU.classList.toggle('open');
         })
+    </script>
+
+    <script src="jquery.min.js"></script>
+    
+
+    <script src="assets/libs/owl.carousel.min.js"></script>
+    <script>
+        $('.banner__carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: true,
+            responsive:{
+                0: {
+                    items: 1,
+                    margin: 30,
+                },
+            }
+        });
+        $(".owl-prev").html('<i class="fa-solid fa-arrow-left"></i>');
+        $(".owl-next").html('<i class="fa-solid fa-arrow-right"></i>');
     </script>
 </body>
 </html>
