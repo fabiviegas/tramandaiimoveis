@@ -1,0 +1,111 @@
+// out: false
+
+@import "fonts.less";
+@import "pallete.less";
+
+.highlight {
+
+    .highlight__title {
+        font-family: @lobster;
+        font-size: 40px;
+        color: @sunOrange;
+        text-align: center;
+        padding: 30px 0 30px 0;
+    }
+
+    .card {
+
+        background-color: @skyBlue;
+    
+
+        .card__carousel img {
+            width: 100%;
+            height: 284px;
+            object-fit: cover;
+            
+        }
+
+        .card__content {
+            display: flex;
+            flex-direction: column;
+            margin: 16px 30px 16px 30px;
+            border-bottom: 1px solid @softWhite;
+
+            .card__title {
+                .ralewayBold();
+                font-size: 24px;
+                color: @softWhite;
+                padding-bottom: 16px;
+            }
+
+            .card__location {
+                .mSerratSBold();
+                font-size: 16px;
+                color: @softWhite;
+                padding-bottom: 16px;
+
+                .icon__card {
+                    width: 12px;
+                    filter: @whiteFooter;
+                    margin-right: 5px;
+                }
+            }
+
+            .card__price {
+                .mSerratSBold();
+                font-size: 32px;
+                color: @softWhite;
+                text-align: center;
+                padding-bottom: 16px;
+            }
+        }
+
+        .card__buttons {
+            margin: 0 30px 30px 30px;
+            display: flex;
+            flex-direction: row;
+
+            .card__house {
+                .mSerratBold();
+                font-size: 16px;
+                color: @sunOrange;
+                padding: 16px 20px 16px 20px;
+                background-color: @softWhite;
+                border-radius: 10px;
+                width: 40%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .card__see {
+                    padding: 5px 15px 0 10;
+                }
+
+                .icon__cardbtn {
+                    width: 25px;
+                    filter: @orangeIcons;
+                }
+            }
+
+            .card__whats {
+                
+                .mSerratBold();
+                font-size: 16px;
+                color: @softWhite;
+                padding: 16px 20px 16px 20px;
+                background-image: linear-gradient(rgb(7 157 68), rgb(52 242 83));
+                border-radius: 10px;
+                width: 60%;
+                margin-left: 10px;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                
+            }
+        }
+    }
+}

@@ -315,7 +315,7 @@ body {
   justify-content: space-between;
   position: absolute;
   top: 45%;
-  width: 98%;
+  width: 100%;
 }
 .banner__carousel .owl-nav .owl-prev {
   position: absolute;
@@ -323,10 +323,10 @@ body {
   left: 0;
   margin: 0;
   margin-left: 10px;
-  padding: 14px 16px 10px 15px !important;
-  color: #090A23;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+  background: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .banner__carousel .owl-nav .owl-next {
   position: absolute;
@@ -334,20 +334,31 @@ body {
   right: 0;
   margin: 0;
   margin-right: 10px;
-  padding: 14px 16px 10px 15px !important;
-  color: #090A23;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+  background: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner__carousel .owl-nav .owl-next::before,
+.banner__carousel .owl-nav .owl-prev::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.25));
+  border-radius: 50% !important;
+  padding: 15px;
 }
 .banner__carousel .owl-nav .owl-prev,
 .banner__carousel .owl-nav .owl-next {
   font-size: 13px;
-  border: 1px solid transparent;
 }
 .banner__carousel .owl-nav .owl-prev:hover,
 .banner__carousel .owl-nav .owl-next:hover {
-  color: #F6A41D;
-  box-shadow: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.banner__carousel .owl-dots {
+  display: none;
 }
 .search {
   background-color: #19057D;
@@ -445,6 +456,95 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 14px;
+}
+.highlight .highlight__title {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  color: #F6A41D;
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+.highlight .card {
+  background-color: #55A8E1;
+}
+.highlight .card .card__carousel img {
+  width: 100%;
+  height: 284px;
+  object-fit: cover;
+}
+.highlight .card .card__content {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 30px 16px 30px;
+  border-bottom: 1px solid #F0F0EF;
+}
+.highlight .card .card__content .card__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #F0F0EF;
+  padding-bottom: 16px;
+}
+.highlight .card .card__content .card__location {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #F0F0EF;
+  padding-bottom: 16px;
+}
+.highlight .card .card__content .card__location .icon__card {
+  width: 12px;
+  filter: invert(99%) sepia(37%) saturate(13%) hue-rotate(1deg) brightness(98%) contrast(91%);
+  margin-right: 5px;
+}
+.highlight .card .card__content .card__price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #F0F0EF;
+  text-align: center;
+  padding-bottom: 16px;
+}
+.highlight .card .card__buttons {
+  margin: 0 30px 30px 30px;
+  display: flex;
+  flex-direction: row;
+}
+.highlight .card .card__buttons .card__house {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #F6A41D;
+  padding: 16px 20px 16px 20px;
+  background-color: #F0F0EF;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.highlight .card .card__buttons .card__house .card__see {
+  padding: 5px 15px 0 10;
+}
+.highlight .card .card__buttons .card__house .icon__cardbtn {
+  width: 25px;
+  filter: invert(76%) sepia(8%) saturate(7479%) hue-rotate(346deg) brightness(100%) contrast(94%);
+}
+.highlight .card .card__buttons .card__whats {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #F0F0EF;
+  padding: 16px 20px 16px 20px;
+  background-image: linear-gradient(#079d44, #34f253);
+  border-radius: 10px;
+  width: 60%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .about {
   background-image: url('../images/bg_praia-mobile.png');
