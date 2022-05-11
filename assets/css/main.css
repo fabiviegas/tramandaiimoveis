@@ -466,6 +466,8 @@ body {
 }
 .highlight .card {
   background-color: #55A8E1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 .highlight .card .card__carousel img {
   width: 100%;
@@ -515,36 +517,42 @@ body {
   font-weight: 700;
   font-size: 16px;
   color: #F6A41D;
-  padding: 16px 20px 16px 20px;
+  padding: 11px 0 11px 0;
   background-color: #F0F0EF;
   border-radius: 10px;
   width: 40%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-}
-.highlight .card .card__buttons .card__house .card__see {
-  padding: 5px 15px 0 10;
 }
 .highlight .card .card__buttons .card__house .icon__cardbtn {
   width: 25px;
+  height: 23px;
   filter: invert(76%) sepia(8%) saturate(7479%) hue-rotate(346deg) brightness(100%) contrast(94%);
+  padding-right: 10px;
+  box-sizing: unset;
 }
 .highlight .card .card__buttons .card__whats {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: #F0F0EF;
-  padding: 16px 20px 16px 20px;
+  padding: 11px 0 11px 0;
   background-image: linear-gradient(#079d44, #34f253);
   border-radius: 10px;
   width: 60%;
   margin-left: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+}
+.highlight .card .card__buttons .card__whats .icon__cardbtn2 {
+  width: 28px;
+  height: 28px;
+  padding-right: 10px;
+  box-sizing: unset;
 }
 .about {
   background-image: url('../images/bg_praia-mobile.png');
