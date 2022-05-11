@@ -52,9 +52,14 @@
             display: flex;
             flex-direction: row;
             .mSerratRegular();
+            
             font-size: 12px;
             padding-top: 17px;
             line-height: 15px;
+
+            a {
+                color: @softWhite;
+            }
             }
         }
     }
@@ -87,7 +92,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        
         padding-top: 40px;
 
         .social__title {
@@ -97,34 +102,38 @@
         }
 
         .social__links {
+            width: 140px;
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             
             .icons__footer2 {
                 width: 50px;
                 filter: @orangeIconsS;
                 box-sizing: unset;
                 
-                &:first-child {
-                    padding-right: 25px;
                 }
             }
             
         }
 
         .back__top {
-            border: none;
+            
             background-color: @marineBlue;
             color: @softWhite;
             padding: 55px 0 55px 0;
 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             .button__text {
-                display: block;
+                
                 padding-bottom: 15px;
                 .mSerratBold();
                 font-size: 16px;
+                
             }
 
             .icons__arrow {
@@ -133,4 +142,3 @@
             }
         }
     }
-}

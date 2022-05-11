@@ -1,9 +1,9 @@
 // out: false
 
-.banner__carousel {
+.owl-carousel.banner__carousel {
 
     img {
-        width: fit-content;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -21,11 +21,9 @@
             left: 0;
 
             margin: 0;
-            margin-left: 10px;
+            margin-left: 15px;
             background: none !important;
             
-            
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -38,11 +36,10 @@
             right: 0;
 
             margin: 0;
-            margin-right: 10px;
+            margin-right: 15px;
             
             background: none !important;
             
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -59,11 +56,14 @@
             border-radius: 50% !important;
             
             padding: 15px;
+
+            
         }
         
         .owl-prev,
         .owl-next {
             font-size: 13px;
+            color: @marineBlue;
             
             &:hover {
                 color: white;
@@ -72,9 +72,7 @@
         }
     }
 
-    .owl-dots {
-        display: none;
-    }
+    
         
     
 } 

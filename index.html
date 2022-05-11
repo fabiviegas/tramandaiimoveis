@@ -18,16 +18,16 @@
     
 </head>
 <body>
-    <header class="page__header">
+    <header class="page__header" id="topo">
         <div class="header__container">
             <div class="header__contacts">
                 <div class="contacts">
-                    <img class="icons__header" src="assets/images/icons/whatsapp-brands.svg" alt="Ícone Whatsapp">
-                    <img class="icons__header" src="assets/images/icons/envelope-solid.svg" alt="Ícone envelope de email">
+                    <a href="https://wa.me/5551997111444" target="_blank"><img class="icons__header" src="assets/images/icons/whatsapp-brands.svg" alt="Ícone Whatsapp"></a>
+                    <a href="mailto:vendas@tramandaiimoveis.com.br" target="_blank"><img class="icons__header" src="assets/images/icons/envelope-solid.svg" alt="Ícone envelope de email"></a>
                 </div>
                 <div class="social">
-                    <img class="icons__header2" src="assets/images/icons/instagram-square-brands.svg" alt="Ícone Instagram">
-                    <img class="icons__header2" src="assets/images/icons/facebook-brands.svg" alt="Ícone Facebook">
+                    <a href="https://www.instagram.com/tramandaiimoveis" target="_blank"><img class="icons__header2" src="assets/images/icons/instagram-square-brands.svg" alt="Ícone Instagram"></a>
+                    <a href="https://www.facebook.com/Tramandaiimoveis" target="_blank"><img class="icons__header2" src="assets/images/icons/facebook-brands.svg" alt="Ícone Facebook"></a>
                 </div>
             </div>
             <div class="header__mobile">
@@ -51,7 +51,13 @@
                                 <a href="#">Venda</a>
                                 <a href="#">Empreendimentos</a>
                                 <a href="#">Contato</a>
+                                <a href="#">Favoritos <i class="fa-regular fa-heart"></i></a>
                             </nav>
+
+                            <div class="logo__navmobile">
+                                <img src="assets/images/logo.jpeg" alt="Logo Tramandaí Imóveis">
+                            </div>
+                            
                             <div class="overlay__buttons">
                                 <a href="#" class="button__client">
                                     Atendimento 24h <i class="fa-brands fa-whatsapp"></i>
@@ -138,8 +144,11 @@
     <section class="highlight">
         <h1 class="highlight__title">Destaques</h1>
         <div class="card">
-            <div class="card__carousel">
-                <img class="card__photo" src="assets/images/destaque1.jpg" alt="Foto do imóvel">
+            <div class="owl-carousel card__carousel">
+                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
+                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
+                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
+                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
             </div>
             <div class="card__content">
                 <h2 class="card__title">Lindo apartamento com 1 suíte</h2>
@@ -147,14 +156,14 @@
                 <p class="card__price">R$380.000,00</p>
             </div>
             <div class="card__buttons">
-                <div class="card__house">
+                <a class="card__house" href="#" target="_blank">
                     <img class="icon__cardbtn" src="assets/images/icons/house-chimney-solid.svg" alt="Ícone de Casa">
                     <p class="card__see">VER</p>
-                </div>
-                <div class="card__whats">
-                    <img class="icon__cardbtn2" src="assets/images/icons/whatsapp_(1).svg" alt="Ícone do Whatsapp">
-                    <p class="card__contact">CONTATAR</p>
-                </div>
+                </a>
+                <a class="card__whats" href="https://wa.me/5551997111444" target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                    <p>CONTATAR</p>
+                </a>
             </div>
         </div>
     </section>
@@ -182,17 +191,17 @@
             <div class="contacts__links">
                 <div class="whats__footer">
                     <img class="icons__footer" src="assets/images/icons/whatsapp-brands.svg" alt="Ícone Whatsapp">
-                    <p>(51) 99711.1444, (51) 99575.7001</p>
+                    <a href="https://wa.me/5551997111444" target="_blank">(51) 99711.1444, (51) 99575.7001</a>
                 </div>
                 <div class="email__footer">
                     <img class="icons__footer" src="assets/images/icons/envelope-solid.svg" alt="Ícone envelope de email">
-                    <p>vendas@tramandaiimoveis.com.br</p>
+                    <a href="mailto:vendas@tramandaiimoveis.com.br" target="_blank">vendas@tramandaiimoveis.com.br</a>
                 </div>
                 <div class="address__footer">
                     <address class="address">
                         <img class="icons__footer" src="assets/images/icons/location-dot-solid.svg" alt="Ícone Ponto de Localização">
-                        <p>Avenida Atlântica, 1810 - Sala 210<br>
-                        Centro, Tramandaí/RS</p>
+                        <a href="https://www.google.com/maps/place/Av.+Atl%C3%A2ntica,+1810+-+sala+210+-+Centro,+Tramanda%C3%AD+-+RS,+95590-000/@-29.9924915,-50.1425289,17z/data=!3m1!4b1!4m5!3m4!1s0x9518732711240001:0xb611aecd662e276b!8m2!3d-29.9924915!4d-50.1403402" target="_blank">Avenida Atlântica, 1810 - Sala 210<br>
+                        Centro, Tramandaí/RS</a>
                     </address>
                 </div>
             </div>
@@ -209,7 +218,7 @@
         </div>
         <div class="nav__footer">
             <h1 class="nav__title">NAVEGAÇÃO</h1>
-            <a class="nav__links" href="#">Página Inicial</a>
+            <a class="nav__links" href="index.html">Página Inicial</a>
             <a class="nav__links" href="#">Sobre Nós</a>
             <a class="nav__links" href="#">Venda</a>
             <a class="nav__links" href="#">Empreendimentos</a>
@@ -218,13 +227,19 @@
         <div class="social__footer">
             <h1 class="social__title">REDES SOCIAIS</h1>
             <div class="social__links">
-                <img class="icons__footer2" src="assets/images/icons/facebook-brands.svg" alt="Ícone Facebook">
-                <img class="icons__footer2" src="assets/images/icons/instagram-square-brands.svg" alt="Ícone Instagram">
+                <a href="https://www.facebook.com/Tramandaiimoveis" target="_blank"><img class="icons__footer2" src="assets/images/icons/facebook-brands.svg" alt="Ícone Facebook"></a>
+                <a href="https://www.instagram.com/tramandaiimoveis" target="_blank"><img class="icons__footer2" src="assets/images/icons/instagram-square-brands.svg" alt="Ícone Instagram"></a>
             </div>
-            <button class="back__top">
+            <a href="#topo" class="back__top">
                 <p class="button__text">VOLTAR AO TOPO</p>
                 <img class="icons__arrow" src="assets/images/icons/circle-arrow-up-solid.svg" alt="Ícone Seta para Cima">
-            </button>
+            </a>
+        </div>
+
+        <div class="whats__button">
+            <a href="https://wa.me/5551997111444" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
         </div>
     </footer>
     
@@ -288,7 +303,7 @@
         $('.banner__carousel').owlCarousel({
             loop: true,
             nav: true,
-            dots: true,
+            dots: false,
             responsive:{
                 0: {
                     items: 1,
@@ -296,8 +311,22 @@
                 },
             }
         });
-        $(".owl-prev").html('<i class="fa-solid fa-arrow-left"></i>');
-        $(".owl-next").html('<i class="fa-solid fa-arrow-right"></i>');
+        $(".owl-prev").html('<i class="fa-solid fa-angle-left"></i>');
+        $(".owl-next").html('<i class="fa-solid fa-angle-right"></i>');
+
+        $('.card__carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            responsive:{
+                0: {
+                    items: 1,
+                    margin: 30,
+                },
+            }
+        });
+        $(".owl-prev").html('<i class="fa-solid fa-angle-left"></i>');
+        $(".owl-next").html('<i class="fa-solid fa-angle-right"></i>');
     </script>
 </body>
 </html>

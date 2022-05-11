@@ -13,18 +13,31 @@
     
         background-color: @sunOrange;
 
-        .icons__header {
-            width: 24px;
+        .contacts {
+            width: 66px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .icons__header {
+                width: 25px;
+                box-sizing: unset;
+            }
+        }
+
+        .social {
+            width: 66px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .icons__header2 {
+            width: 25px;
+            height: 25px;
             box-sizing: unset;
-        }
-
-        .icons__header2 {
-        width: 20px;
-        box-sizing: unset;
-        }
-
-        .icons__header:first-child, .icons__header2:first-child {
-        padding-right: 24px;
+            }
         }
 
         .icons__header, .icons__header2 {
@@ -76,20 +89,21 @@
                 flex-direction: column;
 
         
-                height: 80%;
+                height: 97%;
                 width: 100%;
                 position: fixed;
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
+                box-shadow: 0 10px 10px rgb(0 0 0 / 50%);
                 
                 top: 0;
                 right: 0;
-                background-color: @sunOrange;
+                background-color: @marineBlue;
                 overflow: hidden !important;
                 transition: all linear 0.5s;
         
                 .overlay__content {
-                    background-color: @sunOrange;
+                    
                     overflow-y: auto !important;
         
                     
@@ -123,9 +137,21 @@
                             
                         }
                     }
+
+                    .logo__navmobile {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+
+                        img {
+                            width: 250px;
+                            
+                        }
+                    }
         
                     .overlay__buttons {
-                        padding-top: 50px;
+                        padding-top: 30px;
                         gap: 20px;
                         display: flex;
                         justify-content: center;
@@ -139,7 +165,7 @@
                             .mSerratSBold();
                             font-size: 16px;
                             letter-spacing: 1.5px;
-                            background-color: transparent;
+                            background-color: @sunOrange;
                             color: @softWhite;
                             box-shadow: inset 0 0 1em @softWhite;
                             border-radius: 10px;
