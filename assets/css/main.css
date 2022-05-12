@@ -382,6 +382,9 @@ body {
   border-radius: 0px 0px 50px 0px / 0px 0px 50px 0px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
+.search .advanced__titlesearch {
+  background-color: #F0F0EF;
+}
 .search .search__box {
   padding: 40px 30px 50px 30px;
 }
@@ -474,150 +477,22 @@ body {
   font-weight: 400;
   font-size: 14px;
 }
+.search .search__box .more summary {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+}
+.search .search__box .more summary i {
+  color: #F6A41D;
+  padding: 0 10px 0 0;
+}
 .highlight .highlight__title {
   font-family: "Lobster", cursive;
   font-size: 40px;
   color: #F6A41D;
   text-align: center;
-  padding: 30px 0 30px 0;
-}
-.highlight .card {
-  background-color: #55A8E1;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-}
-.highlight .card .owl-carousel.card__carousel img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  margin: 0 auto;
-}
-.highlight .card .owl-carousel.card__carousel .owl-nav {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 45%;
-  width: 100%;
-}
-.highlight .card .owl-carousel.card__carousel .owl-nav .owl-prev {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  margin-left: 15px;
-  background: none !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.highlight .card .owl-carousel.card__carousel .owl-nav .owl-next {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0;
-  margin-right: 15px;
-  background: none !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.highlight .card .owl-carousel.card__carousel .owl-nav .owl-next::before,
-.highlight .card .owl-carousel.card__carousel .owl-nav .owl-prev::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.25));
-  border-radius: 50% !important;
-  padding: 15px;
-}
-.highlight .card .owl-carousel.card__carousel .owl-nav .owl-prev,
-.highlight .card .owl-carousel.card__carousel .owl-nav .owl-next {
-  font-size: 13px;
-  color: #19057D;
-}
-.highlight .card .owl-carousel.card__carousel .owl-nav .owl-prev:hover,
-.highlight .card .owl-carousel.card__carousel .owl-nav .owl-next:hover {
-  color: white;
-}
-.highlight .card .card__content {
-  display: flex;
-  flex-direction: column;
-  margin: 16px 30px 16px 30px;
-  border-bottom: 1px solid #F0F0EF;
-}
-.highlight .card .card__content .card__title {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  color: #F0F0EF;
-  padding-bottom: 16px;
-}
-.highlight .card .card__content .card__location {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: #F0F0EF;
-  padding-bottom: 16px;
-}
-.highlight .card .card__content .card__location .icon__card {
-  width: 12px;
-  filter: invert(99%) sepia(37%) saturate(13%) hue-rotate(1deg) brightness(98%) contrast(91%);
-  margin-right: 5px;
-}
-.highlight .card .card__content .card__price {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-  color: #F0F0EF;
-  text-align: center;
-  padding-bottom: 16px;
-}
-.highlight .card .card__buttons {
-  margin: 0 30px 30px 30px;
-  display: flex;
-  flex-direction: row;
-}
-.highlight .card .card__buttons .card__house {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: #F6A41D;
-  padding: 11px 0 11px 0;
-  background-color: #F0F0EF;
-  border-radius: 10px;
-  width: 40%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.highlight .card .card__buttons .card__house .icon__cardbtn {
-  width: 25px;
-  height: 23px;
-  filter: invert(76%) sepia(8%) saturate(7479%) hue-rotate(346deg) brightness(100%) contrast(94%);
-  padding-right: 10px;
-  box-sizing: unset;
-}
-.highlight .card .card__buttons .card__whats {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 11px 0 11px 0;
-  background-color: #25d366;
-  border-radius: 10px;
-  width: 60%;
-  margin-left: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: #F0F0EF;
-}
-.highlight .card .card__buttons .card__whats i {
-  font-size: 25px;
-  padding-right: 10px;
+  padding: 30px 0 0 0;
 }
 .about {
   background-image: url('../images/bg_praia-mobile.png');
@@ -795,4 +670,143 @@ body {
 .whats__button i {
   color: #F0F0EF;
   padding-top: 10px;
+}
+.card {
+  background-color: #55A8E1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  margin: 30px;
+}
+.card .owl-carousel.card__carousel img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.card .owl-carousel.card__carousel .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+}
+.card .owl-carousel.card__carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  margin-left: 15px;
+  background: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .owl-carousel.card__carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  margin-right: 15px;
+  background: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .owl-carousel.card__carousel .owl-nav .owl-next::before,
+.card .owl-carousel.card__carousel .owl-nav .owl-prev::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.25));
+  border-radius: 50% !important;
+  padding: 15px;
+}
+.card .owl-carousel.card__carousel .owl-nav .owl-prev,
+.card .owl-carousel.card__carousel .owl-nav .owl-next {
+  font-size: 13px;
+  color: #19057D;
+}
+.card .owl-carousel.card__carousel .owl-nav .owl-prev:hover,
+.card .owl-carousel.card__carousel .owl-nav .owl-next:hover {
+  color: white;
+}
+.card .card__content {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 30px 16px 30px;
+  border-bottom: 1px solid #F0F0EF;
+}
+.card .card__content .card__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #F0F0EF;
+  padding-bottom: 16px;
+}
+.card .card__content .card__location {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #F0F0EF;
+  padding-bottom: 16px;
+}
+.card .card__content .card__location .icon__card {
+  width: 12px;
+  filter: invert(99%) sepia(37%) saturate(13%) hue-rotate(1deg) brightness(98%) contrast(91%);
+  margin-right: 5px;
+}
+.card .card__content .card__price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #F0F0EF;
+  text-align: center;
+  padding-bottom: 16px;
+}
+.card .card__buttons {
+  margin: 0 30px 30px 30px;
+  display: flex;
+  flex-direction: row;
+}
+.card .card__buttons .card__house {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #F6A41D;
+  padding: 11px 0 11px 0;
+  background-color: #F0F0EF;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card .card__buttons .card__house .icon__cardbtn {
+  width: 25px;
+  height: 23px;
+  filter: invert(76%) sepia(8%) saturate(7479%) hue-rotate(346deg) brightness(100%) contrast(94%);
+  padding-right: 10px;
+  box-sizing: unset;
+}
+.card .card__buttons .card__whats {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 11px 0 11px 0;
+  background-color: #25d366;
+  border-radius: 10px;
+  width: 60%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #F0F0EF;
+}
+.card .card__buttons .card__whats i {
+  font-size: 25px;
+  padding-right: 10px;
 }

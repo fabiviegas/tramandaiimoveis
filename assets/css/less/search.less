@@ -8,6 +8,11 @@
     border-radius: 0px 0px 50px 0px / 0px 0px 50px 0px;
     box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
     
+    .advanced__titlesearch {
+
+        background-color: @softWhite;
+
+    }
     .search__box {
         padding: 40px 30px 50px 30px;
 
@@ -117,8 +122,20 @@
         
         }
 
+        .more {
 
+            summary {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                list-style-type: none;
 
-    
+                i {
+                    color: @sunOrange;
+                    padding: 0 10px 0 0;
+                }
+              }
+            
+        }
     }
 }
