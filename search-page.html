@@ -79,7 +79,7 @@
     </header>
 
     <section class="search">
-        <h1 class="advanced__titlesearch">Selecione o que procura:</h1>
+        <h1 class="advanced__titlesearch">Encontre o imóvel perfeito para você:</h1>
         <div class="search__box">
             <p>
                 <button id="venda" class="bt__active" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
@@ -90,9 +90,9 @@
                 </button>
             </p>
             <div class="collapse show" id="collapseExample">
-                <details class="sail__box">
+                <details class="sale__box">
 
-                    <summary>Busca avançada</summary>
+                    <summary class="custom__summary">Busca avançada</summary>
                 
                     <form class="search__bysale" id="sale">
                         <label for="categoria"><h2 class="sale__title">Categoria</h2></label>
@@ -138,44 +138,46 @@
                     <details class="more">
                         <summary><i class="fa-solid fa-circle-plus"></i>Mais opções</summary>
 
-                        <label for="dormitorio"><i class="fa-solid fa-bed"></i><h2 class="options__title">Dormitórios</h2></label>
-                        <div class="custom__options">
-                            <select form="sale" id="dormitorios">
-                                <option value="0">1</option>
-                                <option value="1">2</option>
-                                <option value="2">3</option>
-                                <option value="3">4</option>
-                            </select>
-                        </div>
 
-                        <label for="banheiros"><i class="fa-solid fa-bath"></i><h2 class="options__title">Banheiros</h2></label>
-                        <div class="custom__options">
-                            <select form="sale" id="banheiros">
-                                <option value="0">1</option>
-                                <option value="1">2</option>
-                                <option value="2">3</option>
-                                <option value="3">4</option>
-                            </select>
-                        </div>
+                        <div class="options">
+                            <div class="custom__options">
+                                <label for="dormitorio"><i class="fa-solid fa-bed"></i><h2 class="options__title">Dormitórios</h2></label>
+                                <select form="sale" id="dormitorios">
+                                    <option value="0">1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                </select>
+                            </div>
 
-                        <label for="garagens"><i class="fa-solid fa-car"></i><h2 class="options__title">Garagens</h2></label>
-                        <div class="custom__options">
-                            <select form="sale" id="garagens">
-                                <option value="0">-</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
+                            <div class="custom__options">
+                                <label for="banheiros"><i class="fa-solid fa-bath"></i><h2 class="options__title">Banheiros</h2></label>
+                                <select form="sale" id="banheiros">
+                                    <option value="0">1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                </select>
+                            </div>
 
-                        <label for="suites"><i class="fa-solid fa-bed"></i><i class="fa-solid fa-bath"></i><h2 class="options__title">Suítes</h2></label>
-                        <div class="custom__options">
-                            <select form="sale" id="suites">
-                                <option value="0">-</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
+                            <div class="custom__options">
+                                <label for="garagens"><i class="fa-solid fa-car"></i><h2 class="options__title">Garagens</h2></label>
+                                <select form="sale" id="garagens">
+                                    <option value="0">-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="custom__options">
+                                <label for="suites"><i class="fa-solid fa-bed"></i><i class="fa-solid fa-bath"></i><h2 class="options__title">Suítes</h2></label>
+                                <select form="sale" id="suites">
+                                    <option value="0">-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
                         </div>
                     </details>
                     <button class="submit" id="sale">

@@ -415,7 +415,7 @@ body {
 }
 .search .search__box .collapse {
   background-color: #F0F0EF;
-  padding: 10px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -423,7 +423,7 @@ body {
 .search .search__box .collapse .submit {
   border-style: none;
   background-color: #F6A41D;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-inline-start: 30%;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -445,7 +445,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  padding: 19px 0 19px 0;
+  padding: 0 0 19px 0;
   color: #090A23;
 }
 .search .search__box .search__bysale .custom__select select,
@@ -460,6 +460,7 @@ body {
   border-radius: 5px;
   border-color: #090A23;
   -webkit-appearance: none;
+  margin-bottom: 20px;
   background-image: url('../images/icons/polygon.svg'), linear-gradient(#d2dbe2, #d2dbe2);
   background-repeat: no-repeat;
   background-position: right 0.7em top 50%, right 0 top 0;
@@ -477,15 +478,79 @@ body {
   font-weight: 400;
   font-size: 14px;
 }
+.search .search__box .custom__summary {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #090A23;
+  line-height: 16px;
+  background-color: #F0F0EF;
+  padding: 12px 15px 12px 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #090A23;
+  border-radius: 5px;
+  list-style-type: none;
+  background-image: url('../images/icons/plus-blue.svg'), linear-gradient(#d2dbe2, #d2dbe2);
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%, right 0 top 0;
+  background-size: 12px, 34px;
+}
 .search .search__box .more summary {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 .search .search__box .more summary i {
   color: #F6A41D;
   padding: 0 10px 0 0;
+}
+.search .search__box .more .options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 19px 15px 0 15px;
+}
+.search .search__box .more .options .custom__options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 29px;
+}
+.search .search__box .more .options .custom__options i {
+  color: #F6A41D;
+  padding: 0;
+  padding: 0 6px 10px 0;
+}
+.search .search__box .more .options .custom__options select {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #090A23;
+  line-height: 16px;
+  width: 77px;
+  background-color: #F0F0EF;
+  padding: 12px 15px 12px 15px;
+  border-radius: 5px;
+  border-color: #090A23;
+  -webkit-appearance: none;
+  background-image: url('../images/icons/setinhas.svg'), linear-gradient(#d2dbe2, #d2dbe2);
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%, right 0 top 0;
+  background-size: 12px, 34px;
+}
+.search .advanced__titlesearch {
+  background-image: url('../images/bg_praia 2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lobster", cursive;
+  font-size: 32px;
+  color: #F0F0EF;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 37px 63px;
 }
 .highlight .highlight__title {
   font-family: "Lobster", cursive;
