@@ -55,23 +55,33 @@
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
 
-            .submit {
-                
-                border-style: none;
-                background-color: @sunOrange;
-                margin-top: 20px;
-                margin-inline-start: 30%;
-                border-radius: 10px;
-                box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
-            }
+            .sale__box, .code__box {
 
-            i {
-                color: @softWhite;
-                font-size: 24px;
-                padding: 10px 30px 10px 30px;
+                display: flex;
+                flex-direction: column;
+                
+                width: 100%;
+            
+                #filterButton {
+
+                    align-self: center;
+                
+                    width: 84px;
+                    background-color: @sunOrange;
+                    margin-top: 20px 41px 0 41px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+                
+                }
+
+                i {
+                    color: @softWhite;
+                    font-size: 24px;
+                    padding: 10px 30px 10px 30px;
+                }
             }
         }
-        .search__bysale,
+        .filter__system,
         .search__bycode {
             input,
             select {
@@ -112,6 +122,7 @@
             input {
                 background-color: @softWhite;
                 margin-top: 20px;
+                margin-bottom: 20px;
                 padding: 12px 15px 12px 15px;
                 border-radius: 5px;
                 border-color: @nightBlue;
@@ -148,72 +159,78 @@
            
 
         }
-        .more {
+        
+        .sale__box, .code__box {
+            .more {
 
-            summary {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                list-style-type: none;
-                
-                .mSerratSBold();
-                font-size: 14px;
-
-                i {
-                    color: @sunOrange;
-                    padding: 0 10px 0 0;
-                }
-            }
-
-            .options {
-
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                
-                padding: 19px 15px 0 15px;
-                     
-
-                .custom__options {
-
+                summary {
                     display: flex;
-                    flex-direction: column;
+                    justify-content: flex-start;
                     align-items: center;
-                    padding-bottom: 29px;
+                    list-style-type: none;
+                    
+                    .mSerratSBold();
+                    font-size: 14px;
+                    padding-bottom: 20px;
 
                     i {
                         color: @sunOrange;
-                        padding: 0;
-                        padding: 0 6px 10px 0;
-                        
-                    }
-                                       
-                    label {
-                        .mSerratRegular();
-                        font-size: 14px;
-                        color: @nightBlue;
-                        padding-bottom: 10px;
-                    }
-                    select {
-                        .ralewayRegular();
-                        font-size: 14px;
-                        color: @nightBlue;
-                        line-height: 16px;
-                        width: 77px;
-
-                        background-color: @softWhite;
-                        padding: 12px 15px 12px 15px;
-                        border-radius: 5px;
-                        border-color: @nightBlue;
-                        -webkit-appearance: none;
-
-                        background-image: url('../images/icons/setinhas.svg'), linear-gradient(#d2dbe2, #d2dbe2);
-                        background-repeat: no-repeat;
-                        background-position: right .7em top 50%, right 0 top 0;
-                        background-size: 12px, 34px;
+                        padding: 0 10px 0 0;
                     }
                 }
+
+                .options {
+
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    
+                    padding: 19px 15px 0 15px;
+                        
+
+                    .custom__options {
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding-bottom: 29px;
+
+                        i {
+                            color: @sunOrange;
+                            padding: 0;
+                            padding: 0 6px 10px 0;
+                            
+                        }
+                                        
+                        label {
+                            .mSerratRegular();
+                            font-size: 14px;
+                            color: @nightBlue;
+                            padding-bottom: 10px;
+                        }
+                        select {
+                            .ralewayRegular();
+                            font-size: 14px;
+                            color: @nightBlue;
+                            line-height: 16px;
+                            width: 77px;
+
+                            background-color: @softWhite;
+                            padding: 12px 15px 12px 15px;
+                            border-radius: 5px;
+                            border-color: @nightBlue;
+                            -webkit-appearance: none;
+
+                            background-image: url('../images/icons/setinhas.svg'), linear-gradient(#d2dbe2, #d2dbe2);
+                            background-repeat: no-repeat;
+                            background-position: right .7em top 50%, right 0 top 0;
+                            background-size: 12px, 34px;
+                        }
+                    }
+                }
+                
             }
-            
+        
+    
         }
     }
 

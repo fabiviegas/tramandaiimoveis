@@ -94,95 +94,99 @@
 
                     <summary class="custom__summary">Busca avançada</summary>
                 
-                    <form class="search__bysale" id="sale">
-                        <label for="categoria"><h2 class="sale__title">Categoria</h2></label>
-                        <div class="custom__select">
-                            <select form="sale" id="categoria">
-                                <option value="0">Selecione uma categoria</option>
-                                <option value="1">Apartamento</option>
-                                <option value="2">Casa</option>
-                                <option value="3">Terreno</option>
-                            </select>
-                        </div>
-                                
-                        <label for="cidade"><h2 class="sale__title">Cidade</h2></label>
-                        <div class="custom__select">
-                            <select form="sale" id="cidade">
-                                <option value="0">Selecione uma cidade</option>
-                                <option value="1">Tramandaí - RS</option>
-                                <option value="2">Imbé - RS</option>
-                                <option value="3">Cidreira - RS</option>
-                            </select>
-                        </div>
-                    
-                        <label for="bairro"><h2 class="sale__title">Bairro</h2></label>
-                        <div class="custom__select">
-                            <select form="sale" id="bairro">
-                                <option value="0">Selecione um bairro</option>
-                                <option value="1">Centro</option>
-                                <option value="2">Bairro Aqui</option>
-                                <option value="3">Olá Bairro</option>
-                            </select>
-                        </div>
+                        <form id="filterForm" class="filter__system" action="#">
+                            <label for="category"><h2 class="sale__title">Categoria</h2></label>
+                            <div class="custom__select">
+                                <select name="category" id="category">
+                                    <option value="card" selected>Selecione uma categoria</option>
+                                    <option value="card">Todas</option>
+                                    <option value="apartamento">Apartamento</option>
+                                    <option value="casa">Casa</option>
+                                    <option value="terreno">Terreno</option>
+                                    <option value="kitnet">Kitnet</option>
+                                    <option value="loft">Loft</option>
+                                </select>
+                            </div>
+                                    
+                            <label for="city"><h2 class="sale__title">Cidade</h2></label>
+                            <div class="custom__select">
+                                <select name="city" id="city">
+                                    <option value="card" selected>Selecione a cidade</option>
+                                    <option value="card">Todas</option>
+                                    <option value="tramandai">Tramandaí - RS</option>
+                                    <option value="imbe">Imbé - RS</option>
+                                    <option value="cidreira">Cidreira - RS</option>
+                                </select>
+                            </div>
+                        
+                            <label for="bairro"><h2 class="sale__title">Bairro</h2></label>
+                            <div class="custom__select">
+                                <select form="sale" id="bairro">
+                                    <option value="0">Selecione um bairro</option>
+                                    <option value="1">Centro</option>
+                                    <option value="2">Bairro Aqui</option>
+                                    <option value="3">Olá Bairro</option>
+                                </select>
+                            </div>
 
-                        <label for="finalidade"><h2 class="sale__title">Finalidade</h2></label>
-                        <div class="custom__select">
-                            <select form="sale" id="finalidade">
-                                <option value="0">Venda</option>
-                                <option value="1">Financiamento</option>
-                                <option value="2">Permuta</option>
-                            </select>
-                        </div>
-                    </form>
+                            <label for="finalidade"><h2 class="sale__title">Finalidade</h2></label>
+                            <div class="custom__select">
+                                <select form="sale" id="finalidade">
+                                    <option value="0">Venda</option>
+                                    <option value="1">Financiamento</option>
+                                    <option value="2">Permuta</option>
+                                </select>
+                            </div>
+                        </form>
 
                     <details class="more">
                         <summary><i class="fa-solid fa-circle-plus"></i>Mais opções</summary>
 
 
-                        <div class="options">
-                            <div class="custom__options">
-                                <label for="dormitorio"><i class="fa-solid fa-bed"></i><h2 class="options__title">Dormitórios</h2></label>
-                                <select form="sale" id="dormitorios">
-                                    <option value="0">1</option>
-                                    <option value="1">2</option>
-                                    <option value="2">3</option>
-                                    <option value="3">4</option>
-                                </select>
-                            </div>
+                            <div class="options">
+                                <div class="custom__options">
+                                    <label for="dormitorio"><i class="fa-solid fa-bed"></i><h2 class="options__title">Dormitórios</h2></label>
+                                    <select form="sale" id="dormitorios">
+                                        <option value="0">1</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                    </select>
+                                </div>
 
-                            <div class="custom__options">
-                                <label for="banheiros"><i class="fa-solid fa-bath"></i><h2 class="options__title">Banheiros</h2></label>
-                                <select form="sale" id="banheiros">
-                                    <option value="0">1</option>
-                                    <option value="1">2</option>
-                                    <option value="2">3</option>
-                                    <option value="3">4</option>
-                                </select>
-                            </div>
+                                <div class="custom__options">
+                                    <label for="banheiros"><i class="fa-solid fa-bath"></i><h2 class="options__title">Banheiros</h2></label>
+                                    <select form="sale" id="banheiros">
+                                        <option value="0">1</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                    </select>
+                                </div>
 
-                            <div class="custom__options">
-                                <label for="garagens"><i class="fa-solid fa-car"></i><h2 class="options__title">Garagens</h2></label>
-                                <select form="sale" id="garagens">
-                                    <option value="0">-</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
+                                <div class="custom__options">
+                                    <label for="garagens"><i class="fa-solid fa-car"></i><h2 class="options__title">Garagens</h2></label>
+                                    <select form="sale" id="garagens">
+                                        <option value="0">-</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="custom__options">
+                                    <label for="suites"><i class="fa-solid fa-bed"></i><i class="fa-solid fa-bath"></i><h2 class="options__title">Suítes</h2></label>
+                                    <select form="sale" id="suites">
+                                        <option value="0">-</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="custom__options">
-                                <label for="suites"><i class="fa-solid fa-bed"></i><i class="fa-solid fa-bath"></i><h2 class="options__title">Suítes</h2></label>
-                                <select form="sale" id="suites">
-                                    <option value="0">-</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                        </div>
                     </details>
-                    <button class="submit" id="sale">
+                    <div id="filterButton">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    </div>
 
                     
                 </details>
@@ -193,86 +197,110 @@
                     <form class="search__bycode" id="code">
                         <input form="code" id="code" placeholder="Digite o código do imóvel">
                     </form>
-                    <button class="submit" id="code">
+                    <div id="filterButton">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="highlight">
-        
-        <div class="card">
-            <div class="owl-carousel card__carousel">
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
+        <div class="properties_cards">
+            <div class="card show casa cidreira">
+                <div class="owl-carousel card__carousel">
+                    <div class="item"><img src="assets/images/casa-cidreira.jpg" alt="Foto do imóvel"></div>
+                    <div class="item"><img src="assets/images/casa-cidreira.jpg" alt="Foto do imóvel"></div>
+                    <div class="item"><img src="assets/images/casa-cidreira.jpg" alt="Foto do imóvel"></div>
+                    <div class="item"><img src="assets/images/casa-cidreira.jpg" alt="Foto do imóvel"></div>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Casa de Luxo em Cidreira</h2>
+                    <p class="card__location"><img class="icon__card" src="assets/images/icons/location-dot-solid.svg" alt="Ícone Ponto de Localização">Centro, Cidreira/RS</p>
+                    <p class="card__price">R$520.000,00</p>
+                </div>
+                <div class="card__buttons">
+                    <a class="card__house" href="#" target="_blank">
+                        <img class="icon__cardbtn" src="assets/images/icons/house-chimney-solid.svg" alt="Ícone de Casa">
+                        <p class="card__see">VER</p>
+                    </a>
+                    <a class="card__whats" href="https://wa.me/5551997111444" target="_blank">
+                        <i class="fa fa-whatsapp"></i>
+                        <p>CONTATAR</p>
+                    </a>
+                </div>
             </div>
-            <div class="card__content">
-                <h2 class="card__title">Lindo apartamento com 1 suíte</h2>
-                <p class="card__location"><img class="icon__card" src="assets/images/icons/location-dot-solid.svg" alt="Ícone Ponto de Localização">Centro, Tramandaí/RS</p>
-                <p class="card__price">R$380.000,00</p>
-            </div>
-            <div class="card__buttons">
-                <a class="card__house" href="#" target="_blank">
-                    <img class="icon__cardbtn" src="assets/images/icons/house-chimney-solid.svg" alt="Ícone de Casa">
-                    <p class="card__see">VER</p>
-                </a>
-                <a class="card__whats" href="https://wa.me/5551997111444" target="_blank">
-                    <i class="fa fa-whatsapp"></i>
-                    <p>CONTATAR</p>
-                </a>
-            </div>
-        </div>
 
-        <div class="card">
-            <div class="owl-carousel card__carousel">
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
+            <div class="card show apartamento tramandai">
+                <div class="owl-carousel card__carousel">
+                    <div class="item"><img src="assets/images/apartamento-tramandai.jpg" alt="Foto do imóvel"></div>
+                    <div class="item"><img src="assets/images/apartamento-tramandai.jpg" alt="Foto do imóvel"></div>
+                    <div class="item"><img src="assets/images/apartamento-tramandai.jpg" alt="Foto do imóvel"></div>
+                    <div class="item"><img src="assets/images/apartamento-tramandai.jpg" alt="Foto do imóvel"></div>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Lindo apartamento com 1 suíte</h2>
+                    <p class="card__location"><img class="icon__card" src="assets/images/icons/location-dot-solid.svg" alt="Ícone Ponto de Localização">Centro, Tramandaí/RS</p>
+                    <p class="card__price">R$380.000,00</p>
+                </div>
+                <div class="card__buttons">
+                    <a class="card__house" href="#" target="_blank">
+                        <img class="icon__cardbtn" src="assets/images/icons/house-chimney-solid.svg" alt="Ícone de Casa">
+                        <p class="card__see">VER</p>
+                    </a>
+                    <a class="card__whats" href="https://wa.me/5551997111444" target="_blank">
+                        <i class="fa fa-whatsapp"></i>
+                        <p>CONTATAR</p>
+                    </a>
+                </div>
             </div>
-            <div class="card__content">
-                <h2 class="card__title">Lindo apartamento com 1 suíte</h2>
-                <p class="card__location"><img class="icon__card" src="assets/images/icons/location-dot-solid.svg" alt="Ícone Ponto de Localização">Centro, Tramandaí/RS</p>
-                <p class="card__price">R$380.000,00</p>
-            </div>
-            <div class="card__buttons">
-                <a class="card__house" href="#" target="_blank">
-                    <img class="icon__cardbtn" src="assets/images/icons/house-chimney-solid.svg" alt="Ícone de Casa">
-                    <p class="card__see">VER</p>
-                </a>
-                <a class="card__whats" href="https://wa.me/5551997111444" target="_blank">
-                    <i class="fa fa-whatsapp"></i>
-                    <p>CONTATAR</p>
-                </a>
-            </div>
-        </div>
 
-        <div class="card">
-            <div class="owl-carousel card__carousel">
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
+            <div class="card show terreno imbe">
+                <div class="owl-carousel card__carousel">
+                    <div class="item"><img src="assets/images/terreno-imbe.jpg" alt="Foto do imóvel"></div>
+                    <div class="item"><img src="assets/images/terreno-imbe.jpg" alt="Foto do imóvel"></div>
+                    <div class="item"><img src="assets/images/terreno-imbe.jpg" alt="Foto do imóvel"></div>
+                    <div class="item"><img src="assets/images/terreno-imbe.jpg" alt="Foto do imóvel"></div>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Terreno bem localizado, imperdível!</h2>
+                    <p class="card__location"><img class="icon__card" src="assets/images/icons/location-dot-solid.svg" alt="Ícone Ponto de Localização">Centro, Imbé/RS</p>
+                    <p class="card__price">R$100.000,00</p>
+                </div>
+                <div class="card__buttons">
+                    <a class="card__house" href="#" target="_blank">
+                        <img class="icon__cardbtn" src="assets/images/icons/house-chimney-solid.svg" alt="Ícone de Casa">
+                        <p class="card__see">VER</p>
+                    </a>
+                    <a class="card__whats" href="https://wa.me/5551997111444" target="_blank">
+                        <i class="fa fa-whatsapp"></i>
+                        <p>CONTATAR</p>
+                    </a>
+                </div>
             </div>
-            <div class="card__content">
-                <h2 class="card__title">Lindo apartamento com 1 suíte</h2>
-                <p class="card__location"><img class="icon__card" src="assets/images/icons/location-dot-solid.svg" alt="Ícone Ponto de Localização">Centro, Tramandaí/RS</p>
-                <p class="card__price">R$380.000,00</p>
-            </div>
-            <div class="card__buttons">
-                <a class="card__house" href="#" target="_blank">
-                    <img class="icon__cardbtn" src="assets/images/icons/house-chimney-solid.svg" alt="Ícone de Casa">
-                    <p class="card__see">VER</p>
-                </a>
-                <a class="card__whats" href="https://wa.me/5551997111444" target="_blank">
-                    <i class="fa fa-whatsapp"></i>
-                    <p>CONTATAR</p>
-                </a>
-            </div>
+
+            <div class="card show terreno tramandai">
+                <div class="owl-carousel card__carousel">
+                    <div class="item"><img src="assets/images/terreno-tramandai.jpg" alt="Foto do imóvel"></div>
+                    <div class="item"><img src="assets/images/terreno-tramandai.jpg" alt="Foto do imóvel"></div>
+                    <div class="item"><img src="assets/images/terreno-tramandai.jpg" alt="Foto do imóvel"></div>
+                    <div class="item"><img src="assets/images/terreno-tramandai.jpg" alt="Foto do imóvel"></div>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Terreno amplo incrível!</h2>
+                    <p class="card__location"><img class="icon__card" src="assets/images/icons/location-dot-solid.svg" alt="Ícone Ponto de Localização">Centro, Tramandaí/RS</p>
+                    <p class="card__price">R$80.000,00</p>
+                </div>
+                <div class="card__buttons">
+                    <a class="card__house" href="#" target="_blank">
+                        <img class="icon__cardbtn" src="assets/images/icons/house-chimney-solid.svg" alt="Ícone de Casa">
+                        <p class="card__see">VER</p>
+                    </a>
+                    <a class="card__whats" href="https://wa.me/5551997111444" target="_blank">
+                        <i class="fa fa-whatsapp"></i>
+                        <p>CONTATAR</p>
+                    </a>
+                </div>
         </div>
     </section>
 
@@ -390,8 +418,6 @@
             MENU.classList.toggle('open');
         })
     </script>
-
-    <script src="jquery.min.js"></script>
     
 
     <script src="assets/libs/owl.carousel.min.js"></script>
@@ -411,5 +437,7 @@
         $(".owl-prev").html('<i class="fa-solid fa-angle-left"></i>');
         $(".owl-next").html('<i class="fa-solid fa-angle-right"></i>');
     </script>
+
+    <script src="filter.js"></script>
 </body>
 </html>

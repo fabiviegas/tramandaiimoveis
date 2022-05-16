@@ -420,27 +420,38 @@ body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.search .search__box .collapse .submit {
-  border-style: none;
+.search .search__box .collapse .sale__box,
+.search .search__box .collapse .code__box,
+.search .search__box .collapse .sale__box details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.search .search__box .collapse .sale__box #filterButton,
+.search .search__box .collapse .code__box #filterButton,
+.search .search__box .collapse .sale__box details #filterButton {
+  align-self: center;
+  width: 84px;
   background-color: #F6A41D;
-  margin-top: 20px;
-  margin-inline-start: 30%;
+  margin-top: 20px 41px 0 41px;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-.search .search__box .collapse i {
+.search .search__box .collapse .sale__box i,
+.search .search__box .collapse .code__box i,
+.search .search__box .collapse .sale__box details i {
   color: #F0F0EF;
   font-size: 24px;
   padding: 10px 30px 10px 30px;
 }
-.search .search__box .search__bysale input,
+.search .search__box .filter__system input,
 .search .search__box .search__bycode input,
-.search .search__box .search__bysale select,
+.search .search__box .filter__system select,
 .search .search__box .search__bycode select {
   display: block;
   width: 100%;
 }
-.search .search__box .search__bysale .sale__title,
+.search .search__box .filter__system .sale__title,
 .search .search__box .search__bycode .sale__title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -448,7 +459,7 @@ body {
   padding: 0 0 19px 0;
   color: #090A23;
 }
-.search .search__box .search__bysale .custom__select select,
+.search .search__box .filter__system .custom__select select,
 .search .search__box .search__bycode .custom__select select {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -466,10 +477,11 @@ body {
   background-position: right 0.7em top 50%, right 0 top 0;
   background-size: 12px, 34px;
 }
-.search .search__box .search__bysale input,
+.search .search__box .filter__system input,
 .search .search__box .search__bycode input {
   background-color: #F0F0EF;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 12px 15px 12px 15px;
   border-radius: 5px;
   border-color: #090A23;
@@ -496,7 +508,8 @@ body {
   background-position: right 0.7em top 50%, right 0 top 0;
   background-size: 12px, 34px;
 }
-.search .search__box .more summary {
+.search .search__box .sale__box .more summary,
+.search .search__box .code__box .more summary {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -504,35 +517,42 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;
+  padding-bottom: 20px;
 }
-.search .search__box .more summary i {
+.search .search__box .sale__box .more summary i,
+.search .search__box .code__box .more summary i {
   color: #F6A41D;
   padding: 0 10px 0 0;
 }
-.search .search__box .more .options {
+.search .search__box .sale__box .more .options,
+.search .search__box .code__box .more .options {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 19px 15px 0 15px;
 }
-.search .search__box .more .options .custom__options {
+.search .search__box .sale__box .more .options .custom__options,
+.search .search__box .code__box .more .options .custom__options {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 29px;
 }
-.search .search__box .more .options .custom__options i {
+.search .search__box .sale__box .more .options .custom__options i,
+.search .search__box .code__box .more .options .custom__options i {
   color: #F6A41D;
   padding: 0;
   padding: 0 6px 10px 0;
 }
-.search .search__box .more .options .custom__options label {
+.search .search__box .sale__box .more .options .custom__options label,
+.search .search__box .code__box .more .options .custom__options label {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #090A23;
   padding-bottom: 10px;
 }
-.search .search__box .more .options .custom__options select {
+.search .search__box .sale__box .more .options .custom__options select,
+.search .search__box .code__box .more .options .custom__options select {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -749,6 +769,12 @@ body {
   border-bottom-right-radius: 30px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   margin: 30px;
+}
+.card.hide {
+  display: none;
+}
+.card.show {
+  display: block;
 }
 .card .owl-carousel.card__carousel img {
   width: 100%;
