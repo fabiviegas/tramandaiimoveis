@@ -421,15 +421,22 @@ body {
   border-bottom-right-radius: 15px;
 }
 .search .search__box .collapse .sale__box,
-.search .search__box .collapse .code__box,
-.search .search__box .collapse .sale__box details {
+.search .search__box .collapse .code__box {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 .search .search__box .collapse .sale__box #filterButton,
-.search .search__box .collapse .code__box #filterButton,
-.search .search__box .collapse .sale__box details #filterButton {
+.search .search__box .collapse .code__box #filterButton {
+  align-self: center;
+  width: 84px;
+  background-color: #F6A41D;
+  margin-top: 20px 41px 0 41px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.search .search__box .collapse .sale__box #filterHome,
+.search .search__box .collapse .code__box #filterHome {
   align-self: center;
   width: 84px;
   background-color: #F6A41D;
@@ -438,8 +445,7 @@ body {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .search .search__box .collapse .sale__box i,
-.search .search__box .collapse .code__box i,
-.search .search__box .collapse .sale__box details i {
+.search .search__box .collapse .code__box i {
   color: #F0F0EF;
   font-size: 24px;
   padding: 10px 30px 10px 30px;
@@ -476,6 +482,14 @@ body {
   background-repeat: no-repeat;
   background-position: right 0.7em top 50%, right 0 top 0;
   background-size: 12px, 34px;
+}
+.search .search__box .filter__system .custom__select select option.hide,
+.search .search__box .search__bycode .custom__select select option.hide {
+  display: none;
+}
+.search .search__box .filter__system .custom__select select option.show,
+.search .search__box .search__bycode .custom__select select option.show {
+  display: block;
 }
 .search .search__box .filter__system input,
 .search .search__box .search__bycode input {

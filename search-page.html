@@ -119,22 +119,27 @@
                                 </select>
                             </div>
                         
-                            <label for="bairro"><h2 class="sale__title">Bairro</h2></label>
+                            <label for="district"><h2 class="sale__title">Bairro</h2></label>
                             <div class="custom__select">
-                                <select form="sale" id="bairro">
-                                    <option value="0">Selecione um bairro</option>
-                                    <option value="1">Centro</option>
-                                    <option value="2">Bairro Aqui</option>
-                                    <option value="3">Olá Bairro</option>
+                                <select name="district" id="district">
+                                    <option value="card" selected>Selecione um bairro</option>
+                                    // Bairros de Tramandaí
+                                    <option value="trcentro">Centro - Tramandaí</option>
+                                    <option value="trhumaita">Humaitá - Tramandaí</option>
+                                    //Bairros de Imbé
+                                    <option value="imcentro">Centro - Imbé</option>
+                                    //Bairros de Cidreira
+                                    <option value="cicentro">Centro - Cidreira</option>
                                 </select>
                             </div>
 
-                            <label for="finalidade"><h2 class="sale__title">Finalidade</h2></label>
+                            <label for="goal"><h2 class="sale__title">Finalidade</h2></label>
                             <div class="custom__select">
-                                <select form="sale" id="finalidade">
-                                    <option value="0">Venda</option>
-                                    <option value="1">Financiamento</option>
-                                    <option value="2">Permuta</option>
+                                <select id="goal">
+                                    <option value="card" selected>Selecione uma finalidade</option>
+                                    <option value="venda">Venda</option>
+                                    <option value="financiamento">Financiamento</option>
+                                    <option value="permuta">Permuta</option>
                                 </select>
                             </div>
                         </form>
@@ -145,41 +150,43 @@
 
                             <div class="options">
                                 <div class="custom__options">
-                                    <label for="dormitorio"><i class="fa-solid fa-bed"></i><h2 class="options__title">Dormitórios</h2></label>
-                                    <select form="sale" id="dormitorios">
-                                        <option value="0">1</option>
-                                        <option value="1">2</option>
-                                        <option value="2">3</option>
-                                        <option value="3">4</option>
+                                    <label for="bedroom"><i class="fa-solid fa-bed"></i><h2 class="options__title">Dormitórios</h2></label>
+                                    <select id="bedroom">
+                                        <option value="card" selected>-</option>
+                                        <option value="1q">1</option>
+                                        <option value="2q">2</option>
+                                        <option value="3q">3</option>
+                                        <option value="4q">4</option>
                                     </select>
                                 </div>
 
                                 <div class="custom__options">
-                                    <label for="banheiros"><i class="fa-solid fa-bath"></i><h2 class="options__title">Banheiros</h2></label>
-                                    <select form="sale" id="banheiros">
-                                        <option value="0">1</option>
-                                        <option value="1">2</option>
-                                        <option value="2">3</option>
-                                        <option value="3">4</option>
+                                    <label for="bathroom"><i class="fa-solid fa-bath"></i><h2 class="options__title">Banheiros</h2></label>
+                                    <select id="bathroom">
+                                        <option value="card" selected>-</option>
+                                        <option value="1b">1</option>
+                                        <option value="2b">2</option>
+                                        <option value="3b">3</option>
+                                        <option value="4b">4</option>
                                     </select>
                                 </div>
 
                                 <div class="custom__options">
-                                    <label for="garagens"><i class="fa-solid fa-car"></i><h2 class="options__title">Garagens</h2></label>
-                                    <select form="sale" id="garagens">
-                                        <option value="0">-</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
+                                    <label for="garage"><i class="fa-solid fa-car"></i><h2 class="options__title">Garagens</h2></label>
+                                    <select id="garage">
+                                        <option value="card" selected>-</option>
+                                        <option value="1g">1</option>
+                                        <option value="2g">2</option>
+                                        <option value="3g">3</option>
                                     </select>
                                 </div>
                                 <div class="custom__options">
-                                    <label for="suites"><i class="fa-solid fa-bed"></i><i class="fa-solid fa-bath"></i><h2 class="options__title">Suítes</h2></label>
-                                    <select form="sale" id="suites">
-                                        <option value="0">-</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
+                                    <label for="suite"><i class="fa-solid fa-bed"></i><i class="fa-solid fa-bath"></i><h2 class="options__title">Suítes</h2></label>
+                                    <select id="suite">
+                                        <option value="card" selected>-</option>
+                                        <option value="1s">1</option>
+                                        <option value="2s">2</option>
+                                        <option value="3s">3</option>
                                     </select>
                                 </div>
                             </div>
@@ -197,7 +204,7 @@
                     <form class="search__bycode" id="code">
                         <input form="code" id="code" placeholder="Digite o código do imóvel">
                     </form>
-                    <div id="filterButton">
+                    <div id="filterCodes">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
@@ -207,7 +214,7 @@
 
     <section class="highlight">
         <div class="properties_cards">
-            <div class="card show casa cidreira">
+            <div class="card show casa cidreira cicentro venda 4q 2b 2g 1s">
                 <div class="owl-carousel card__carousel">
                     <div class="item"><img src="assets/images/casa-cidreira.jpg" alt="Foto do imóvel"></div>
                     <div class="item"><img src="assets/images/casa-cidreira.jpg" alt="Foto do imóvel"></div>
@@ -231,7 +238,7 @@
                 </div>
             </div>
 
-            <div class="card show apartamento tramandai">
+            <div class="card show apartamento tramandai trcentro venda 2q 1b 1g">
                 <div class="owl-carousel card__carousel">
                     <div class="item"><img src="assets/images/apartamento-tramandai.jpg" alt="Foto do imóvel"></div>
                     <div class="item"><img src="assets/images/apartamento-tramandai.jpg" alt="Foto do imóvel"></div>
@@ -255,7 +262,7 @@
                 </div>
             </div>
 
-            <div class="card show terreno imbe">
+            <div class="card show terreno imbe imcentro permuta">
                 <div class="owl-carousel card__carousel">
                     <div class="item"><img src="assets/images/terreno-imbe.jpg" alt="Foto do imóvel"></div>
                     <div class="item"><img src="assets/images/terreno-imbe.jpg" alt="Foto do imóvel"></div>
@@ -279,7 +286,7 @@
                 </div>
             </div>
 
-            <div class="card show terreno tramandai">
+            <div class="card show terreno tramandai trhumaita financiamento">
                 <div class="owl-carousel card__carousel">
                     <div class="item"><img src="assets/images/terreno-tramandai.jpg" alt="Foto do imóvel"></div>
                     <div class="item"><img src="assets/images/terreno-tramandai.jpg" alt="Foto do imóvel"></div>
@@ -288,7 +295,7 @@
                 </div>
                 <div class="card__content">
                     <h2 class="card__title">Terreno amplo incrível!</h2>
-                    <p class="card__location"><img class="icon__card" src="assets/images/icons/location-dot-solid.svg" alt="Ícone Ponto de Localização">Centro, Tramandaí/RS</p>
+                    <p class="card__location"><img class="icon__card" src="assets/images/icons/location-dot-solid.svg" alt="Ícone Ponto de Localização">Humaitá, Tramandaí/RS</p>
                     <p class="card__price">R$80.000,00</p>
                 </div>
                 <div class="card__buttons">
@@ -439,5 +446,6 @@
     </script>
 
     <script src="filter.js"></script>
+    
 </body>
 </html>

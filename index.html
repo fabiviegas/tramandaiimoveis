@@ -100,37 +100,45 @@
             <div class="collapse show" id="collapseExample">
                 <div class="sale__box">
                     <form id="filterForm" class="filter__system" action="#">
-                        <label for="categoria"><h2 class="sale__title">Categoria</h2></label>
+                        <label for="categoryH"><h2 class="sale__title">Categoria</h2></label>
                         <div class="custom__select">
-                            <select form="sale" id="categoria">
-                                <option value="0">Selecione uma categoria</option>
-                                <option value="1">Apartamento</option>
-                                <option value="2">Casa</option>
-                                <option value="3">Terreno</option>
+                            <select name="category" id="categoryH">
+                                <option value="card" selected>Selecione uma categoria</option>
+                                <option value="card">Todas</option>
+                                <option value="apartamento">Apartamento</option>
+                                <option value="casa">Casa</option>
+                                <option value="terreno">Terreno</option>
+                                <option value="kitnet">Kitnet</option>
+                                <option value="loft">Loft</option>
                             </select>
                         </div>
                                 
-                        <label for="cidade"><h2 class="sale__title">Cidade</h2></label>
+                        <label for="cityH"><h2 class="sale__title">Cidade</h2></label>
                         <div class="custom__select">
-                            <select form="sale" id="cidade">
-                                <option value="0">Selecione uma cidade</option>
-                                <option value="1">Tramandaí - RS</option>
-                                <option value="2">Imbé - RS</option>
-                                <option value="3">Cidreira - RS</option>
+                            <select name="city" id="cityH">
+                                <option value="card" selected>Selecione a cidade</option>
+                                <option value="card">Todas</option>
+                                <option value="tramandai">Tramandaí - RS</option>
+                                <option value="imbe">Imbé - RS</option>
+                                <option value="cidreira">Cidreira - RS</option>
                             </select>
                         </div>
                     
-                        <label for="bairro"><h2 class="sale__title">Bairro</h2></label>
+                        <label for="districtH"><h2 class="sale__title">Bairro</h2></label>
                         <div class="custom__select">
-                            <select form="sale" id="bairro">
-                                <option value="0">Selecione um bairro</option>
-                                <option value="1">Centro</option>
-                                <option value="2">Bairro Aqui</option>
-                                <option value="3">Olá Bairro</option>
+                            <select name="district" id="districtH">
+                                <option value="card" selected>Selecione um bairro</option>
+                                // Bairros de Tramandaí
+                                <option value="trcentro">Centro - Tramandaí</option>
+                                <option value="trhumaita">Humaitá - Tramandaí</option>
+                                //Bairros de Imbé
+                                <option value="imcentro">Centro - Imbé</option>
+                                //Bairros de Cidreira
+                                <option value="cicentro">Centro - Cidreira</option>
                             </select>
                         </div>
                     </form>
-                    <div id="filterButton">
+                    <div id="filterHome">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
@@ -140,7 +148,7 @@
                     <form class="search__bycode" id="code">
                         <input form="code" id="code" placeholder="Digite o código do imóvel">
                     </form>
-                    <div id="filterButton">
+                    <div id="filterCode">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
@@ -150,7 +158,7 @@
 
     <section class="highlight">
         <h1 class="highlight__title">Destaques</h1>
-        <div class="card">
+        <div class="card show apartamento tramandai destaque">
             <div class="owl-carousel card__carousel">
                 <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
                 <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
@@ -302,7 +310,7 @@
         })
     </script>
 
-    <script src="jquery.min.js"></script>
+   
     
 
     <script src="assets/libs/owl.carousel.min.js"></script>
@@ -335,5 +343,8 @@
         $(".owl-prev").html('<i class="fa-solid fa-angle-left"></i>');
         $(".owl-next").html('<i class="fa-solid fa-angle-right"></i>');
     </script>
+
+    <script src="filter-home.js"></script>
+    
 </body>
 </html>

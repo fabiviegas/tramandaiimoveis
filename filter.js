@@ -1,6 +1,5 @@
 // FILTROS
 const CARDS = document.getElementsByClassName("card");
-const FILTROS = document.getElementById("category");
 let BAG = [];
 
 // Esconder os cards
@@ -21,55 +20,45 @@ function showCards() {
     }
 }
 
-// filtrar pela classe
-function filterCategory() {
-    let classOption = document.getElementById("category").value;
-    for (i = 0; i < CARDS.length; i++) {
-        let a = CARDS[i].classList.contains(categoryOption);
-        if (a === true) {
-            CARDS[i].classList.remove("hide");
-            CARDS[i].classList.add("show");
-        }
-    }
-}
-
-// filtrar pelo Tier
-function filterCity() {
-    let tierOption = document.getElementById("city").value;
-    for (i = 0; i < CARDS.length; i++) {
-        let b = CARDS[i].classList.contains(cityOption);
-        if (a === true) {
-            CARDS[i].classList.remove("hide");
-            CARDS[i].classList.add("show");
-        }
-    }    
-}
-
-// filtrar pela classe e tier
-function filterCategoryCity() {
+// filtrar 
+function filterCards() {
     let categoryOption = document.getElementById("category").value;
     let cityOption = document.getElementById("city").value;
+    let districtOption = document.getElementById("district").value;
+    let goalOption = document.getElementById("goal").value;
+    let bedroomOption = document.getElementById("bedroom").value;
+    let bathroomOption = document.getElementById("bathroom").value;
+    let garageOption = document.getElementById("garage").value;
+    let suiteOption = document.getElementById("suite").value;
     for (i = 0; i < CARDS.length; i++) {
         let a = CARDS[i].classList.contains(categoryOption);
         let b = CARDS[i].classList.contains(cityOption);
-        if (a === true & b === true) {
+        let c = CARDS[i].classList.contains(districtOption);
+        let d = CARDS[i].classList.contains(goalOption);
+        let e = CARDS[i].classList.contains(bedroomOption);
+        let f = CARDS[i].classList.contains(bathroomOption);
+        let g = CARDS[i].classList.contains(garageOption);
+        let h = CARDS[i].classList.contains(suiteOption);
+        if (a === true & b === true & c === true & d === true & e === true & f === true & g === true & h === true) {
             CARDS[i].classList.remove("hide");
             CARDS[i].classList.add("show");
         }
     }
 }
 
-
-
 // ACESSAR FILTRO
-function filterCards() {
-    filterCategoryCity();
-}
 
 const SUBMIT = document.querySelector('#filterButton');
 SUBMIT.addEventListener('click', () => {
     hideCards();
     filterCards();
 });
+
+// FIRST LOAD
+document.getElementById("category").value = localStorage.categoryh;
+document.getElementById("city").value = localStorage.cityh;
+document.getElementById("district").value = localStorage.districth;
+hideCards();
+filterCards();
 
 
