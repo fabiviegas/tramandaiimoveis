@@ -1,0 +1,103 @@
+// out: false
+
+@import "fonts.less";
+@import "pallete.less";
+@import "keyframe.less";
+
+@keyframes phone {
+
+    0% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+.contact__all {
+    display: flex;
+    flex-direction: column;
+    
+
+    .contact__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+        width: 100%;
+
+        color: @marineBlue;
+        background-image: url('../images/bg_praia 2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: @lobster;
+        font-size: 38px;
+        color: @softWhite;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        
+    }
+
+    .contact__form {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .contact__subtitle {
+            .mSerratSBold();
+            font-size: 16px;
+            color: @nightBlue;
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+
+            input, textarea {
+                background-color: @softWhite;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                padding: 12px 15px 12px 15px;
+                border-radius: 5px;
+                -webkit-appearance: none;
+                border-width: 2px;
+
+                .ralewayRegular();
+                font-size: 14px;
+            }
+
+            label {
+                .mSerratSBold;
+                font-size: 16px;
+                color: @nightBlue;
+            }
+              
+        }
+    
+        button {
+            align-self: center;
+                
+            width: 50%;
+            background-color: @sunOrange;
+            border-radius: 10px;
+            box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+            .mSerratSBold();
+            color: @softWhite;
+            font-size: 18px;
+            padding: 10px 30px 10px 30px;
+            border: none;
+        }
+    }
+
+    .contact__image {
+        align-self: center;
+        margin-bottom: 40px;
+        transition: translate(50%, 50%);
+        -webkit-animation: ring 2s ease infinite;
+        animation: ring 2s ease infinite;
+        -webkit-transform-origin-x: 50%;
+        -webkit-transform-origin-y: 0px;
+        -webkit-transform-origin-z: initial;
+        }
+            
+}

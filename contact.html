@@ -16,13 +16,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="assets/libs/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/libs/owl.theme.default.min.css">
-
     <link href="assets/css/main.css" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/a4d818eef5.js" crossorigin="anonymous"></script>
-    
+
 </head>
 <body>
     <header class="page__header" id="topo">
@@ -78,124 +75,34 @@
         </div>
     </header>
 
-    <section class="banner">
-        <div class="owl-carousel banner__carousel" >
-            <div class="item"><img src="assets/images/tramandai_slide1_mobile.jpg" alt="Slide 1 Família na Praia"></div>
+    <main class="page__contact">
+        
+        <div class="contact__all">
             
-            <div class="item"><img src="assets/images/tramandai_slide2_mobile.jpg" alt="Slide 2 Família no Apartamento"></div>
-                        
-        </div>
-    </section>
-
-    <section class="search">
-        <div class="search__box">
-            <p>
-                <button id="venda" class="bt__active" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
-                Venda
-                </button>
-                <button id="codigo" class="bt__off" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                    Código
-                </button>
-            </p>
-            <div class="collapse show" id="collapseExample">
-                <div class="sale__box">
-                    <form id="filterForm" class="filter__system" action="#">
-                        <label for="categoryH"><h2 class="sale__title">Categoria</h2></label>
-                        <div class="custom__select">
-                            <select name="category" id="categoryH">
-                                <option value="card" selected>Selecione uma categoria</option>
-                                <option value="card">Todas</option>
-                                <option value="apartamento">Apartamento</option>
-                                <option value="casa">Casa</option>
-                                <option value="terreno">Terreno</option>
-                                <option value="kitnet">Kitnet</option>
-                                <option value="loft">Loft</option>
-                            </select>
-                        </div>
-                                
-                        <label for="cityH"><h2 class="sale__title">Cidade</h2></label>
-                        <div class="custom__select">
-                            <select name="city" id="cityH">
-                                <option value="card" selected>Selecione a cidade</option>
-                                <option value="card">Todas</option>
-                                <option value="tramandai">Tramandaí - RS</option>
-                                <option value="imbe">Imbé - RS</option>
-                                <option value="cidreira">Cidreira - RS</option>
-                            </select>
-                        </div>
-                    
-                        <label for="districtH"><h2 class="sale__title">Bairro</h2></label>
-                        <div class="custom__select">
-                            <select name="district" id="districtH">
-                                <option value="card" selected>Selecione um bairro</option>
-                                // Bairros de Tramandaí
-                                <option value="trcentro">Centro - Tramandaí</option>
-                                <option value="trhumaita">Humaitá - Tramandaí</option>
-                                //Bairros de Imbé
-                                <option value="imcentro">Centro - Imbé</option>
-                                //Bairros de Cidreira
-                                <option value="cicentro">Centro - Cidreira</option>
-                            </select>
-                        </div>
-                    </form>
-                    <div id="filterHome">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                </div>
+            <div class="contact__title">
+                <h1>Contato</h1>
             </div>
-            <div class="collapse" id="collapseExample2">
-                <div class="code__box">
-                    <form class="search__bycode" id="code">
-                        <input form="code" id="code" placeholder="Digite o código do imóvel">
-                    </form>
-                    <div id="filterCode">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                </div>
+            <div class="contact__form">
+                <h2 class="contact__subtitle">Envie uma mensagem, em breve retornaremos.</h2>
+                <form class="contact" id="contact">
+                    <label for="name" class="contact__data">Nome:</label>
+                    <input type="text" id="name" placeholder="Digite seu nome completo" required>
+                    <label for="phone" class="contact__data">Telefone:</label>
+                    <input type="tel" id="phone" placeholder="Digite seu número de telefone com DDD" required>
+            
+                    <label for="email" class="contact__data">E-mail:</label>
+                    <input type="email" id="email" placeholder="Digite seu endereço de e-mail" required>
+                    <label for="message" class="contact__data">Mensagem:</label>
+                    <textarea id="message" rows="6" cols="30" required></textarea>
+                </form>
+                <button type="submit" form="contact">Enviar</button>
+                
+            </div>
+            <div class="contact__image">
+                <img src="assets/images/phone.png" alt="Telefone">
             </div>
         </div>
-    </section>
-
-    <section class="highlight">
-        <h1 class="highlight__title">Destaques</h1>
-        <div class="card show apartamento tramandai destaque">
-            <div class="owl-carousel card__carousel">
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-                <div class="item"><img src="assets/images/destaque1.jpg" alt="Foto do imóvel"></div>
-            </div>
-            <div class="card__content">
-                <h2 class="card__title">Lindo apartamento com 1 suíte</h2>
-                <p class="card__location"><img class="icon__card" src="assets/images/icons/location-dot-solid.svg" alt="Ícone Ponto de Localização">Centro, Tramandaí/RS</p>
-                <p class="card__price">R$380.000,00</p>
-            </div>
-            <div class="card__buttons">
-                <a class="card__house" href="#" target="_blank">
-                    <img class="icon__cardbtn" src="assets/images/icons/house-chimney-solid.svg" alt="Ícone de Casa">
-                    <p class="card__see">VER</p>
-                </a>
-                <a class="card__whats" href="https://wa.me/5551997111444" target="_blank">
-                    <i class="fa fa-whatsapp"></i>
-                    <p>CONTATAR</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="banner__about">
-            <img class="banner__logo" src="assets/images/banner_sobre.png" alt="Foto Família na Praia e Logo Tramandaí Imóveis">
-        </div>
-        <div class="about__content">
-            <h1 class="about__title">Sobre nós</h1>
-            <p class="about__text">A nossa filosofia de trabalho é extremamente simples: Tratar as pessoas como gostaríamos de ser tratados.</p>
-            <p class="about__text">O nosso trabalho é baseado na confiança e transparência.<br>
-            O nosso objetivo é atender as expectativas de quem compra e de quem vende, para que a negociação seja sempre boa para todas as partes envolvidas.</p>
-            <p class="about__text">Estaremos sempre de braços abertos para os clientes e amigos e pronto para atende-los de forma personalizada.</p>
-            <p class="about__text">Antes de efetuar uma venda procuramos conquistar um amigo. Venha conosco fazer uma ótima parceria.</p>
-        </div>
-    </section>
+    </main>
 
     <footer class="page__footer">
         <div class="contacts__footer">
@@ -263,39 +170,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-            
-            $('.collapse').on('show.bs.collapse', function () {
-                $('.collapse.show').each(function () {
-                    $(this).collapse('hide');
-                });
-            });
-
-            $("#venda").on("click", function () {
-                
-                $(this).removeClass("bt__off");
-                $(this).addClass("bt__active");
-                $("#codigo").removeClass("bt__active");
-                $("#codigo").addClass("bt__off");
-                
-
-            });
-
-            $("#codigo").on("click", function () {
-
-                $(this).removeClass("bt__off");
-                $(this).addClass("bt__active");
-                $("#venda").removeClass("bt__active");
-                $("#venda").addClass("bt__off");
-                
-
-            });
-
-        });
-    </script>
-
     <script>
         const HAMBURGUER = document.querySelector('.navbar__hamburguer');
         const MENU = document.querySelector('.navbar__overlay');
@@ -310,41 +184,5 @@
         })
     </script>
 
-   
-    
-
-    <script src="assets/libs/owl.carousel.min.js"></script>
-    <script>
-        $('.banner__carousel').owlCarousel({
-            loop: true,
-            nav: true,
-            dots: false,
-            responsive:{
-                0: {
-                    items: 1,
-                    margin: 30,
-                },
-            }
-        });
-        $(".owl-prev").html('<i class="fa-solid fa-angle-left"></i>');
-        $(".owl-next").html('<i class="fa-solid fa-angle-right"></i>');
-
-        $('.card__carousel').owlCarousel({
-            loop: true,
-            nav: true,
-            dots: false,
-            responsive:{
-                0: {
-                    items: 1,
-                    margin: 30,
-                },
-            }
-        });
-        $(".owl-prev").html('<i class="fa-solid fa-angle-left"></i>');
-        $(".owl-next").html('<i class="fa-solid fa-angle-right"></i>');
-    </script>
-
-    <script src="filter-home.js"></script>
-    
 </body>
 </html>
