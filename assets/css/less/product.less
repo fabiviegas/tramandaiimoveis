@@ -7,7 +7,9 @@
 
     .owl-carousel.product__carousel {
         
-        background-color: @skyBlue;
+        background-image: url('../images/bg_praia 2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         margin-top: 30px;
         box-shadow: 0 8px 8px rgb(0 0 0 / 25%);
         border-top-left-radius: 20px;
@@ -17,7 +19,7 @@
         img {
             padding: 30px;
             width: 100%;
-            height: 320px;
+            height: 310px;
             object-fit: cover; 
             
                         
@@ -29,15 +31,15 @@
             align-items: center;
             position: absolute;
             top: 45%;
-            width: 95%;
+            width: 100%;
     
             .owl-prev {
                 position: absolute;
                 top: 0;
-                left: 0;
+                left: 4%;
     
                 margin: 0;
-                margin-right: 30px;
+                
                 background: none !important;
                 
                 
@@ -51,7 +53,7 @@
             .owl-next {
                 position: absolute;
                 top: 0;
-                right: 0;
+                right: 4%;
     
                 margin: 0;
                 margin-left: 15px;                
@@ -70,15 +72,13 @@
                 
                 width: 100%;
                 height: 100%;
-                background-image: linear-gradient(rgb(0 0 0 / 50%), rgb(255 255 255 / 50%));
-                border-radius: 50% !important;
-                
-                padding: 15px;
+                              
+        
             }
             
             .owl-prev,
             .owl-next {
-                font-size: 13px;
+                font-size: 20px;
                 color: @marineBlue;
 
                 &:hover {
@@ -87,8 +87,31 @@
                 }
             }
         }
-    
     }
+    
+    .product__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+        .add__favorites {
+            .mSerratBold();
+            font-size: 16px;
+            color: @sunOrange;
+            padding: 11px;
+            background-color: @white;
+            border-radius: 10px;
+            width: 244px; 
+            text-align: center;
+            text-justify: center;
+            border-style: none;
+            box-shadow: 0 8px 8px rgb(0 0 0 / 25%);
+            border: 1px solid @sunOrange;
+    
+        }
+    }
+
     .product__content {
         display: flex;
         flex-direction: column;
@@ -117,6 +140,13 @@
                 filter: @orangeIcons;
                 margin-right: 5px;
             }
+        }
+
+        .product__code {
+            .mSerratRegular();
+            font-size: 14px;
+            color: @marineBlue;
+            padding-bottom: 16px;
         }
 
         .product__price {

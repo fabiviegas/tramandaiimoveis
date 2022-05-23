@@ -66,7 +66,7 @@
                             </div>
                             
                             <div class="overlay__buttons">
-                                <a href="#" class="button__client">
+                                <a href="https://wa.me/5551997111444" class="button__client">
                                     Atendimento 24h <i class="fa-brands fa-whatsapp"></i>
                                 </a>
                             </div>
@@ -84,10 +84,15 @@
                 <div class="item"><img src="assets/images/casa-cidreira.jpg" alt="Foto do imóvel"></div>
                 <div class="item"><img src="assets/images/casa-cidreira.jpg" alt="Foto do imóvel"></div>
         </div>
+
+        <div class="product__buttons">
+            <button type="button" class="add__favorites">Adicionar aos Favoritos <i class="fa-regular fa-heart"></i></button>
+        </div>
         
         <div class="product__content">
             <h2 class="product__title">Casa de Luxo em Cidreira</h2>
             <p class="product__location"><img class="icon__card" src="assets/images/icons/location-dot-solid.svg" alt="Ícone Ponto de Localização">Centro, Cidreira/RS</p>
+            <p class="product__code">Código 567898</p>
             <p class="product__price">R$520.000,00</p>
             <h1 class="description__title">Tranquilidade, Segurança e Natureza aliadas à beleza e infraestrutura do Condomínio Marítimo</h1>
             <p class="product__description">
@@ -167,6 +172,28 @@
         </div>
 
     </main>
+
+    <section class="contact__all">
+                  
+        <div class="contact__title">
+            <h1>Gostou? Entre em contato conosco:</h1>
+        </div>
+        <div class="contact__form">
+            <form class="contact" id="contact">
+                <label for="name" class="contact__data">Nome:</label>
+                <input type="text" id="name" placeholder="Digite seu nome completo" required>
+                <label for="phone" class="contact__data">Telefone:</label>
+                <input type="tel" id="phone" placeholder="Digite seu número de telefone com DDD" required>
+                <label for="email" class="contact__data">E-mail:</label>
+                <input type="email" id="email" placeholder="Digite seu endereço de e-mail" required>
+                <label for="message" class="contact__data">Mensagem:</label>
+                <textarea id="message" rows="6" cols="30" required>Olá, gostaria de mais informações sobre o imóvel de código (insira aqui o código do produto).</textarea>
+            </form>
+            <button type="submit" form="contact">Enviar</button>
+            
+        </div>
+        
+    </section>
 
     <footer class="page__footer">
         <div class="contacts__footer">
