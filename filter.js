@@ -55,9 +55,18 @@ SUBMIT.addEventListener('click', () => {
 });
 
 // FIRST LOAD
-document.getElementById("category").value = localStorage.categoryh;
-document.getElementById("city").value = localStorage.cityh;
-document.getElementById("district").value = localStorage.districth;
+if(sessionStorage.categoryh != undefined) {
+    document.getElementById("category").value = sessionStorage.categoryh;
+}
+
+if(sessionStorage.cityh != undefined) {
+    document.getElementById("city").value = sessionStorage.cityh;
+}
+
+if(sessionStorage.districth != undefined) {
+    document.getElementById("district").value = sessionStorage.districth;
+}
+
 hideCards();
 filterCards();
 

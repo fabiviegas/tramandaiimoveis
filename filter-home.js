@@ -2,9 +2,9 @@
 // Armazenar as informações da pesquisa
 
 function storageInfo() {
-    localStorage.categoryh = document.getElementById("categoryH").value;
-    localStorage.cityh = document.getElementById("cityH").value;
-    localStorage.districth = document.getElementById("districtH").value;
+    sessionStorage.categoryh = document.getElementById("categoryH").value;
+    sessionStorage.cityh = document.getElementById("cityH").value;
+    sessionStorage.districth = document.getElementById("districtH").value;
     
 }
 
